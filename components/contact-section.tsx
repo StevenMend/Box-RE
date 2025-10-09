@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Send, Sparkles, MapPin, MessageSquare, User, Mail, Phone, ArrowRight } from "lucide-react"
+import { Send, Sparkles, MapPin, MessageSquare, User, Mail, Phone } from "lucide-react"
 import { useTranslation } from "@/lib/i18n"
 import { useState, useEffect, useCallback } from "react"
 
@@ -25,12 +25,12 @@ export default function ContactSection() {
   const [focusedField, setFocusedField] = useState(null)
 
   const projectTypes = [
-    { value: 'house', label: 'House' },
-    { value: 'restaurant', label: 'Restaurant' },
-    { value: 'hotel', label: 'Hotel' },
-    { value: 'resort', label: 'Resort' },
-    { value: 'park', label: 'Park' },
-    { value: 'other', label: 'Other' }
+    { value: 'house', label: t('contact.projectType.house') },
+    { value: 'restaurant', label: t('contact.projectType.restaurant') },
+    { value: 'hotel', label: t('contact.projectType.hotel') },
+    { value: 'resort', label: t('contact.projectType.resort') },
+    { value: 'park', label: t('contact.projectType.park') },
+    { value: 'other', label: t('contact.projectType.other') }
   ]
 
   const handleInputChange = useCallback((field, value) => {
@@ -59,7 +59,7 @@ export default function ContactSection() {
     if (!formData.fullName || !formData.email || !formData.idea) {
       setStatus({
         type: 'error',
-        message: 'Por favor completa todos los campos requeridos'
+        message: t('contact.errorMessage')
       })
       return
     }
@@ -78,8 +78,6 @@ export default function ContactSection() {
       _replyto: formData.email
     }
     
-    console.log('Enviando a ambos forms:', formPayload)
-    
     try {
       const [response1, response2] = await Promise.all([
         fetch('https://formspree.io/f/mjkrpapq', {
@@ -94,13 +92,10 @@ export default function ContactSection() {
         })
       ])
       
-      console.log('Response Box (compa):', response1.status)
-      console.log('Response Steven (tuyo):', response2.status)
-      
       if (response1.ok || response2.ok) {
         setStatus({
           type: 'success',
-          message: 'Mensaje enviado exitosamente. Te contactaremos pronto.'
+          message: t('contact.successMessage')
         })
         
         setFormData({
@@ -118,7 +113,7 @@ export default function ContactSection() {
       console.error('Error:', error)
       setStatus({
         type: 'error',
-        message: 'Error al enviar el mensaje. Por favor, intenta nuevamente.'
+        message: t('contact.errorMessage')
       })
     } finally {
       setIsLoading(false)
@@ -136,14 +131,12 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-16 md:py-24 px-4 bg-zinc-950 relative overflow-hidden">
-      {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/3 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white/2 rounded-full blur-3xl" />
       </div>
       
       <div className="container mx-auto max-w-4xl relative">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -152,15 +145,13 @@ export default function ContactSection() {
           className="text-center mb-10"
         >
           <h2 className="section-title text-3xl md:text-4xl mb-4 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.9)] drop-shadow-[0_0_16px_rgba(255,255,255,0.7)] drop-shadow-[0_0_24px_rgba(255,255,255,0.5)] drop-shadow-[0_0_32px_rgba(255,255,255,0.3)]">
-            SCHEDULE YOUR FREE CONSULTATION
+            {t('contact.title')}
           </h2>
           <p className="text-gray-200 font-satoshi max-w-2xl mx-auto drop-shadow-[0_0_6px_rgba(255,255,255,0.7)] drop-shadow-[0_0_12px_rgba(255,255,255,0.5)] drop-shadow-[0_0_18px_rgba(255,255,255,0.3)]">
-            Please complete the form below. We will respond shortly to schedule a call where
-            we can show you how we can help bring your architectural vision to life.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
-        {/* Form Container */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -168,24 +159,20 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="relative"
         >
-          {/* Background Elements */}
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent rounded-2xl" />
           <div className="absolute inset-0 bg-black/40 backdrop-blur-sm rounded-2xl border border-white/10 shadow-2xl" />
           
-          {/* Neon border effect */}
           <div className="absolute inset-0 rounded-2xl">
             <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-20 blur-sm"></div>
             <div className="absolute top-0 left-1/4 w-1/2 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent"></div>
             <div className="absolute bottom-0 left-1/4 w-1/2 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
           </div>
           
-          {/* Form */}
           <form
             onSubmit={handleSubmit}
             className="relative space-y-6 p-8 md:p-10 rounded-2xl"
             noValidate
           >
-            {/* Toast */}
             <AnimatePresence>
               {status.message && (
                 <motion.div
@@ -204,13 +191,11 @@ export default function ContactSection() {
               )}
             </AnimatePresence>
 
-            {/* Contact Info Grid */}
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Full Name */}
               <div className="space-y-3">
                 <Label htmlFor="fullName" className="text-white font-medium flex items-center">
                   <User className="w-4 h-4 mr-2 text-gray-400" />
-                  Full Name *
+                  {t('contact.fullName')} *
                 </Label>
                 <Input
                   id="fullName"
@@ -220,7 +205,7 @@ export default function ContactSection() {
                   onChange={(e) => handleInputChange('fullName', e.target.value)}
                   onFocus={() => setFocusedField('fullName')}
                   onBlur={() => setFocusedField(null)}
-                  placeholder="Your full name"
+                  placeholder={t('contact.fullNamePlaceholder')}
                   className={`bg-zinc-900 border-zinc-700 focus:border-white transition-all duration-300 pl-4 h-12 relative ${
                     focusedField === 'fullName' ? 'ring-2 ring-white/20 shadow-lg shadow-white/10' : ''
                   }`}
@@ -228,11 +213,10 @@ export default function ContactSection() {
                 />
               </div>
 
-              {/* Email */}
               <div className="space-y-3">
                 <Label htmlFor="email" className="text-white font-medium flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-gray-400" />
-                  Email Address *
+                  {t('contact.email')} *
                 </Label>
                 <Input
                   id="email"
@@ -242,7 +226,7 @@ export default function ContactSection() {
                   onChange={(e) => handleInputChange('email', e.target.value)}
                   onFocus={() => setFocusedField('email')}
                   onBlur={() => setFocusedField(null)}
-                  placeholder="your@email.com"
+                  placeholder={t('contact.emailPlaceholder')}
                   className={`bg-zinc-900 border-zinc-700 focus:border-white transition-all duration-300 pl-4 h-12 ${
                     focusedField === 'email' ? 'ring-2 ring-white/20 shadow-lg shadow-white/10' : ''
                   }`}
@@ -251,11 +235,10 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* WhatsApp */}
             <div className="space-y-3">
               <Label htmlFor="whatsapp" className="text-white font-medium flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-gray-400" />
-                National or international WhatsApp number
+                {t('contact.whatsapp')}
               </Label>
               <Input
                 id="whatsapp"
@@ -265,20 +248,18 @@ export default function ContactSection() {
                 onChange={handleWhatsAppChange}
                 onFocus={() => setFocusedField('whatsapp')}
                 onBlur={() => setFocusedField(null)}
-                placeholder="+506 8888 8888"
+                placeholder={t('contact.whatsappPlaceholder')}
                 className={`bg-zinc-900 border-zinc-700 focus:border-white transition-all duration-300 pl-4 h-12 ${
                   focusedField === 'whatsapp' ? 'ring-2 ring-white/20' : ''
                 }`}
               />
             </div>
 
-            {/* Project Details Grid */}
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Project Type */}
               <div className="space-y-3">
                 <Label htmlFor="projectType" className="text-white font-medium flex items-center">
                   <Sparkles className="w-4 h-4 mr-2 text-gray-400" />
-                  Project Type
+                  {t('contact.projectType')}
                 </Label>
                 <Select 
                   value={formData.projectType} 
@@ -288,7 +269,7 @@ export default function ContactSection() {
                     id="projectType" 
                     className="bg-zinc-900 border-zinc-700 focus:border-white h-12 transition-all duration-300"
                   >
-                    <SelectValue placeholder="Select an option" />
+                    <SelectValue placeholder={t('contact.selectOption')} />
                   </SelectTrigger>
                   <SelectContent className="bg-zinc-900 border-zinc-700 text-white">
                     {projectTypes.map((type) => (
@@ -300,11 +281,10 @@ export default function ContactSection() {
                 </Select>
               </div>
 
-              {/* Project Location */}
               <div className="space-y-3">
                 <Label htmlFor="projectLocation" className="text-white font-medium flex items-center">
                   <MapPin className="w-4 h-4 mr-2 text-gray-400" />
-                  Project Location
+                  {t('contact.projectLocation')}
                 </Label>
                 <Input
                   id="projectLocation"
@@ -314,7 +294,7 @@ export default function ContactSection() {
                   onChange={(e) => handleInputChange('projectLocation', e.target.value)}
                   onFocus={() => setFocusedField('projectLocation')}
                   onBlur={() => setFocusedField(null)}
-                  placeholder="Province, Canton"
+                  placeholder={t('contact.projectLocationPlaceholder')}
                   className={`bg-zinc-900 border-zinc-700 focus:border-white transition-all duration-300 pl-4 h-12 ${
                     focusedField === 'projectLocation' ? 'ring-2 ring-white/20' : ''
                   }`}
@@ -322,11 +302,10 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Project Idea */}
             <div className="space-y-3">
               <Label htmlFor="idea" className="text-white font-medium flex items-center">
                 <MessageSquare className="w-4 h-4 mr-2 text-gray-400" />
-                Briefly tell us your idea *
+                {t('contact.idea')} *
               </Label>
               <Textarea
                 id="idea"
@@ -335,7 +314,7 @@ export default function ContactSection() {
                 onChange={(e) => handleInputChange('idea', e.target.value)}
                 onFocus={() => setFocusedField('idea')}
                 onBlur={() => setFocusedField(null)}
-                placeholder="Ex: I want to build a small house for rent near the beach"
+                placeholder={t('contact.ideaPlaceholder')}
                 rows={5}
                 className={`bg-zinc-900 border-zinc-700 focus:border-white resize-none transition-all duration-300 ${
                   focusedField === 'idea' ? 'ring-2 ring-white/20' : ''
@@ -344,7 +323,6 @@ export default function ContactSection() {
               />
             </div>
 
-            {/* Submit Button */}
             <div className="pt-6">
               <Button 
                 type="submit" 
@@ -352,14 +330,13 @@ export default function ContactSection() {
                 className="w-full angular-button disabled:opacity-50 disabled:cursor-not-allowed h-14 !flex !items-center !justify-center !py-0"
               >
                 <Send className="mr-2 w-4 h-4" />
-                {isLoading ? 'Enviando...' : 'Enviar Consulta'}
+                {isLoading ? t('contact.sending') : t('contact.submitButton')}
                 <div className="angular-button-overlay" />
               </Button>
             </div>
           </form>
         </motion.div>
 
-        {/* Bottom Info */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -368,7 +345,7 @@ export default function ContactSection() {
           className="text-center mt-12"
         >
           <p className="text-gray-500 text-sm tracking-wide">
-            Te contactaremos dentro de 24 horas para discutir tu proyecto
+            {t('contact.bottomMessage')}
           </p>
         </motion.div>
       </div>

@@ -6,6 +6,7 @@ export const translations = {
     "header.reviews": "Reviews",
     "header.contact": "Contact",
     "header.realEstate": "Real Estate",
+    "header.terrains": "Terrains",
     "header.boxArchitects": "BOX ARCHITECTS",
 
     // Hero
@@ -90,8 +91,8 @@ export const translations = {
     "reviews.addReview.submit": "Submit Review",
     "reviews.addReview.cancel": "Cancel",
 
-    // Contact Section
-    "contact.title": " Schedule Your Free Consultation",
+    // Contact Section ✅ COMPLETO
+    "contact.title": "Schedule Your Free Consultation",
     "contact.subtitle":
       "Please complete the form below. We will respond shortly to schedule a call where we can show you how we can help bring your architectural vision to life.",
     "contact.fullName": "Full Name",
@@ -99,7 +100,7 @@ export const translations = {
     "contact.email": "Email Address",
     "contact.emailPlaceholder": "your@email.com",
     "contact.whatsapp": "National or international WhatsApp number",
-    "contact.whatsappPlaceholder": "+ ",
+    "contact.whatsappPlaceholder": "+506 8888 8888",
     "contact.projectType": "Project Type",
     "contact.selectOption": "Select an option",
     "contact.projectType.house": "House",
@@ -112,7 +113,11 @@ export const translations = {
     "contact.projectLocationPlaceholder": "Province, Canton",
     "contact.idea": "Briefly tell us your idea",
     "contact.ideaPlaceholder": "Ex: I want to build a small house for rent near the beach",
-    "contact.submitButton": "Schedule my free call",
+    "contact.submitButton": "Submit Inquiry",
+    "contact.sending": "Sending...",
+    "contact.successMessage": "Message sent successfully. We will contact you soon.",
+    "contact.errorMessage": "Error sending message. Please try again.",
+    "contact.bottomMessage": "We will contact you within 24 hours to discuss your project",
 
     // Footer
     "footer.description": "Architecture studio specializing in tropical brutalist design in Costa Rica.",
@@ -241,72 +246,6 @@ export const translations = {
     "terrains.common.available": "Available",
     "terrains.common.inProcess": "In process",
 
-    // Terrains Data
-    "terrains.vistaAlMar.title": "Ocean View Terrain",
-    "terrains.vistaAlMar.price": "$180,000 USD",
-    "terrains.vistaAlMar.location": "Tamarindo, Guanacaste",
-    "terrains.vistaAlMar.area": "2,500 m²",
-    "terrains.vistaAlMar.status": "VERIFYING",
-    "terrains.vistaAlMar.amenities.security": "Safe area",
-    "terrains.vistaAlMar.amenities.beachAccess": "5 min to beach",
-    "terrains.vistaAlMar.amenities.utilities": "Services available",
-    "terrains.vistaAlMar.amenities.infrastructure": "Paved roads",
-    "terrains.vistaAlMar.investmentData.potential": "High",
-    "terrains.vistaAlMar.investmentData.zoning": "Residential",
-    "terrains.vistaAlMar.investmentData.access": "Public road",
-
-    "terrains.montaña.title": "Mountain Lot",
-    "terrains.montaña.price": "$95,000 USD",
-    "terrains.montaña.location": "Monteverde, Puntarenas", 
-    "terrains.montaña.area": "1,800 m²",
-    "terrains.montaña.status": "VERIFYING",
-    "terrains.montaña.amenities.security": "Private community",
-    "terrains.montaña.amenities.beachAccess": "Panoramic view",
-    "terrains.montaña.amenities.utilities": "Electricity available",
-    "terrains.montaña.amenities.infrastructure": "4x4 access",
-    "terrains.montaña.investmentData.potential": "Medium",
-    "terrains.montaña.investmentData.zoning": "Residential",
-    "terrains.montaña.investmentData.access": "Secondary road",
-
-    "terrains.comercial.title": "Commercial Terrain",
-    "terrains.comercial.price": "$280,000 USD",
-    "terrains.comercial.location": "Liberia, Guanacaste",
-    "terrains.comercial.area": "3,200 m²", 
-    "terrains.comercial.status": "VERIFYING",
-    "terrains.comercial.amenities.security": "Active commercial area",
-    "terrains.comercial.amenities.beachAccess": "20 min to airport",
-    "terrains.comercial.amenities.utilities": "Complete services",
-    "terrains.comercial.amenities.infrastructure": "Highway front",
-    "terrains.comercial.investmentData.potential": "Very High",
-    "terrains.comercial.investmentData.zoning": "Commercial",
-    "terrains.comercial.investmentData.access": "Main road",
-
-    "terrains.nahua.title": "Private Lot – Nahua",
-    "terrains.nahua.price": "$450,000 USD",
-    "terrains.nahua.location": "Sababa Grande, Guanacaste",
-    "terrains.nahua.area": "3,305 m²",
-    "terrains.nahua.status": "VERIFYING",
-    "terrains.nahua.amenities.security": "Strategic area",
-    "terrains.nahua.amenities.beachAccess": "5 beaches 1 hour away",
-    "terrains.nahua.amenities.utilities": "6 km from Nicoya, 12 km Santa Cruz",
-    "terrains.nahua.amenities.infrastructure": "Quiet rural area",
-    "terrains.nahua.investmentData.potential": "High",
-    "terrains.nahua.investmentData.zoning": "Residential",
-    "terrains.nahua.investmentData.access": "Rural road",
-
-    "terrains.yadira.title": "FINCA YADIRA - Box Reserve",
-    "terrains.yadira.price": "Consult price",
-    "terrains.yadira.location": "Santa Cruz, Guanacaste",
-    "terrains.yadira.area": "20,885 m²",
-    "terrains.yadira.status": "REGISTERED", 
-    "terrains.yadira.amenities.security": "Quiet residential area",
-    "terrains.yadira.amenities.beachAccess": "15 min to beach",
-    "terrains.yadira.amenities.utilities": "Water, electricity available",
-    "terrains.yadira.amenities.infrastructure": "Paved access",
-    "terrains.yadira.investmentData.potential": "High",
-    "terrains.yadira.investmentData.zoning": "Residential/Commercial",
-    "terrains.yadira.investmentData.access": "Direct public access",
-
     // Modal Content
     "terrainModal.areaM2": "Area in m²",
     "terrainModal.areaFt2": "Area in ft²",
@@ -332,93 +271,6 @@ export const translations = {
     "terrainModal.requestPDF": "Free Legal consult",
     "terrainModal.whatsappConcierge":"WhatsApp Agent",
     "terrainModal.securePurchase": "Schedule call",
-
-
-
-
-    "terrains.sanMarco.title": "San Marco Agricultural Lot",
-    "terrains.sanMarco.price": "$45,000 USD",
-    "terrains.sanMarco.location": "Santa Cruz, Guanacaste",
-    "terrains.sanMarco.area": "363 m²",
-    "terrains.sanMarco.status": "REGISTERED",
-    "terrains.sanMarco.amenities.security": "Quiet and safe area",
-    "terrains.sanMarco.amenities.beachAccess": "15 min to main beaches",
-    "terrains.sanMarco.amenities.utilities": "Water and electricity available",
-    "terrains.sanMarco.amenities.infrastructure": "Developed infrastructure",
-    "terrains.sanMarco.investmentData.potential": "High",
-    "terrains.sanMarco.investmentData.zoning": "Agricultural/Commercial",
-    "terrains.sanMarco.investmentData.access": "Direct public road",
-
-    // Contact Section - Enhanced Multi-Step (AGREGAR ESTAS)
-    "contact.steps.vision": "What's your vision?",
-    "contact.steps.details": "Project details", 
-    "contact.steps.budget": "Budget & timeline",
-    "contact.steps.contact": "Contact information",
-
-    "contact.dreamProjectTitle": "What's your dream project?",
-    "contact.dreamProjectSubtitle": "Select the type of project you want to develop",
-
-    "contact.projectType.vacationHome": "Vacation Home",
-    "contact.projectType.investment": "Investment Property",
-
-    "contact.projectDescriptions.house": "Your dream home in Costa Rica",
-    "contact.projectDescriptions.vacationHome": "Weekend getaway retreat", 
-    "contact.projectDescriptions.investment": "To generate income",
-    "contact.projectDescriptions.restaurant": "Unique gastronomic space",
-    "contact.projectDescriptions.hotel": "Hospitality with personality",
-    "contact.projectDescriptions.other": "Tell us your idea",
-
-    "contact.locationTitle": "Where do you envision it?",
-    "contact.locationSubtitle": "Location is key to your project's success",
-    "contact.locationHelper": "Mention province, canton, or specific characteristics like \"near the beach\" or \"mountain area\"",
-
-    "contact.recommendationsTitle": "Personalized recommendations",
-    "contact.recommendations.guanacasteClimate": "Consider land near Guanacaste for better climate",
-    "contact.recommendations.tropicalDesign": "Tropical brutalist design adapts perfectly to the environment", 
-    "contact.recommendations.touristZones": "Tourist zones have better ROI for rentals",
-    "contact.recommendations.beachProperties": "Properties near beaches appreciate 15% annually",
-    "contact.recommendations.premiumBudget": "Your budget allows for premium materials and spectacular views",
-
-    "contact.budgetTimelineTitle": "Budget and timeline",
-    "contact.budgetTimelineSubtitle": "This helps us recommend the best opportunities for you",
-    "contact.budgetLabel": "Estimated budget", 
-    "contact.timelineLabel": "When do you want to start?",
-
-    "contact.budget.under100k": "Under $100k",
-    "contact.budget.100k250k": "$100k - $250k",
-    "contact.budget.250k500k": "$250k - $500k", 
-    "contact.budget.over500k": "Over $500k",
-
-    "contact.budgetDescriptions.under100k": "Land + basic house",
-    "contact.budgetDescriptions.100k250k": "Complete house with finishes",
-    "contact.budgetDescriptions.250k500k": "Premium project with luxuries",
-    "contact.budgetDescriptions.over500k": "Dream villa",
-
-    "contact.timeline.asap": "As soon as possible",
-    "contact.timeline.sixMonths": "In 6 months", 
-    "contact.timeline.oneYear": "In 1 year",
-    "contact.timeline.flexible": "Flexible",
-
-    "contact.timelineDescriptions.asap": "Ready to start",
-    "contact.timelineDescriptions.sixMonths": "Time to plan",
-    "contact.timelineDescriptions.oneYear": "Medium-term project", 
-    "contact.timelineDescriptions.flexible": "When the perfect moment comes",
-
-    "contact.finalStepTitle": "Final step!",
-    "contact.finalStepSubtitle": "Contact information to schedule your free consultation",
-
-    "contact.projectSummary": "Project summary:",
-    "contact.summaryType": "Type",
-    "contact.summaryLocation": "Location",
-    "contact.summaryBudget": "Budget", 
-    "contact.summaryTimeline": "Timeline",
-
-    "contact.backButton": "Back",
-    "contact.nextButton": "Next",
-    "contact.sending": "Sending...",
-    "contact.successMessage": "Message sent successfully. We will contact you soon.",
-    "contact.errorMessage": "Error sending message. Please try again.",
-    "contact.bottomMessage": "We will contact you within 24 hours to schedule your free consultation"
   },
 
   es: {
@@ -428,6 +280,7 @@ export const translations = {
     "header.reviews": "Reseñas",
     "header.contact": "Contacto",
     "header.realEstate": "Inmobiliaria",
+    "header.terrains": "Terrenos",
     "header.boxArchitects": "BOX ARCHITECTS",
 
     // Hero
@@ -512,16 +365,16 @@ export const translations = {
     "reviews.addReview.submit": "Enviar Reseña",
     "reviews.addReview.cancel": "Cancelar",
 
-    // Contact Section
-    "contact.title": " Agenda tu Consulta Gratuita",
+    // Contact Section ✅ COMPLETO
+    "contact.title": "Agenda tu Consulta Gratuita",
     "contact.subtitle":
       "Por favor, completa el siguiente formulario. Te responderemos en breve para agendar una llamada donde podremos mostrarte cómo podemos ayudarte a materializar tu visión arquitectónica.",
     "contact.fullName": "Nombre Completo",
     "contact.fullNamePlaceholder": "Tu nombre completo",
     "contact.email": "Correo Electrónico",
     "contact.emailPlaceholder": "tu@correo.com",
-    "contact.whatsapp": "Whatsapp nacional o internacional",
-    "contact.whatsappPlaceholder": "+",
+    "contact.whatsapp": "WhatsApp nacional o internacional",
+    "contact.whatsappPlaceholder": "+506 8888 8888",
     "contact.projectType": "Tipo de Proyecto",
     "contact.selectOption": "Selecciona una opción",
     "contact.projectType.house": "Casa",
@@ -534,7 +387,11 @@ export const translations = {
     "contact.projectLocationPlaceholder": "Provincia, Cantón",
     "contact.idea": "Cuéntanos brevemente tu idea",
     "contact.ideaPlaceholder": "Ej: Quiero construir una pequeña casa para alquiler cerca de la playa",
-    "contact.submitButton": "Agendar mi llamada gratuita",
+    "contact.submitButton": "Enviar Consulta",
+    "contact.sending": "Enviando...",
+    "contact.successMessage": "Mensaje enviado exitosamente. Te contactaremos pronto.",
+    "contact.errorMessage": "Error al enviar el mensaje. Por favor, intenta nuevamente.",
+    "contact.bottomMessage": "Te contactaremos dentro de 24 horas para discutir tu proyecto",
 
     // Footer
     "footer.description": "Estudio de arquitectura especializado en diseño brutalista tropical en Costa Rica.",
@@ -603,7 +460,7 @@ export const translations = {
     "privacyPolicy.paragraph3":
       "No vendemos, comercializamos ni transferimos de ninguna otra forma su información de identificación personal a terceros. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web, llevar a cabo nuestro negocio o servir a nuestros usuarios, siempre y cuando esas partes acuerden mantener esta información confidencial.",
     "privacyPolicy.paragraph4":
-      "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal. Al usar nuestro sitio, usted acepta nuestra política de privacidad. Nos reservamos el derecho de actualizar esta política en cualquier momento, y cualquier cambio se publicará en esta página.",
+    "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal. Al usar nuestro sitio, usted acepta nuestra política de privacidad. Nos reservamos el derecho de actualizar esta política en cualquier momento, y cualquier cambio se publicará en esta página.",
 
     // Inmobiliaria Section (Real Estate)
     "inmobiliaria.title": "Inmobiliaria",
@@ -664,72 +521,6 @@ export const translations = {
     "terrains.common.available": "Disponible",
     "terrains.common.inProcess": "En proceso",
 
-    // Terrains Data
-    "terrains.vistaAlMar.title": "Terreno Vista al Mar",
-    "terrains.vistaAlMar.price": "$180,000 USD",
-    "terrains.vistaAlMar.location": "Tamarindo, Guanacaste",
-    "terrains.vistaAlMar.area": "2,500 m²",
-    "terrains.vistaAlMar.status": "VERIFICANDO",
-    "terrains.vistaAlMar.amenities.security": "Zona segura",
-    "terrains.vistaAlMar.amenities.beachAccess": "5 min a playa",
-    "terrains.vistaAlMar.amenities.utilities": "Servicios disponibles",
-    "terrains.vistaAlMar.amenities.infrastructure": "Vías pavimentadas",
-    "terrains.vistaAlMar.investmentData.potential": "Alto",
-    "terrains.vistaAlMar.investmentData.zoning": "Residencial",
-    "terrains.vistaAlMar.investmentData.access": "Vía pública",
-
-    "terrains.montaña.title": "Lote Montaña", 
-    "terrains.montaña.price": "$95,000 USD",
-    "terrains.montaña.location": "Monteverde, Puntarenas",
-    "terrains.montaña.area": "1,800 m²",
-    "terrains.montaña.status": "VERIFICANDO",
-    "terrains.montaña.amenities.security": "Comunidad privada",
-    "terrains.montaña.amenities.beachAccess": "Vista panorámica",
-    "terrains.montaña.amenities.utilities": "Electricidad disponible",
-    "terrains.montaña.amenities.infrastructure": "Acceso 4x4",
-    "terrains.montaña.investmentData.potential": "Medio",
-    "terrains.montaña.investmentData.zoning": "Residencial",
-    "terrains.montaña.investmentData.access": "Vía secundaria",
-
-    "terrains.comercial.title": "Terreno Comercial",
-    "terrains.comercial.price": "$280,000 USD", 
-    "terrains.comercial.location": "Liberia, Guanacaste",
-    "terrains.comercial.area": "3,200 m²",
-    "terrains.comercial.status": "VERIFICANDO",
-    "terrains.comercial.amenities.security": "Zona comercial activa",
-    "terrains.comercial.amenities.beachAccess": "20 min al aeropuerto",
-    "terrains.comercial.amenities.utilities": "Servicios completos",
-    "terrains.comercial.amenities.infrastructure": "Frente a carretera",
-    "terrains.comercial.investmentData.potential": "Muy Alto",
-    "terrains.comercial.investmentData.zoning": "Comercial",
-    "terrains.comercial.investmentData.access": "Vía principal",
-
-    "terrains.nahua.title": "Lote Privado – Nahua",
-    "terrains.nahua.price": "$450,000 USD",
-    "terrains.nahua.location": "Sababa Grande, Guanacaste",
-    "terrains.nahua.area": "3,305 m²",
-    "terrains.nahua.status": "VERIFICANDO",
-    "terrains.nahua.amenities.security": "Zona estratégica",
-    "terrains.nahua.amenities.beachAccess": "5 playas a 1 hora",
-    "terrains.nahua.amenities.utilities": "6 km de Nicoya, 12 km Santa Cruz",
-    "terrains.nahua.amenities.infrastructure": "Zona rural tranquila",
-    "terrains.nahua.investmentData.potential": "Alto",
-    "terrains.nahua.investmentData.zoning": "Residencial",
-    "terrains.nahua.investmentData.access": "Vía rural",
-
-    "terrains.yadira.title": "FINCA YADIRA - Reserva Box",
-    "terrains.yadira.price": "Consultar precio",
-    "terrains.yadira.location": "Santa Cruz, Guanacaste",
-    "terrains.yadira.area": "20,885 m²", 
-    "terrains.yadira.status": "INSCRITO",
-    "terrains.yadira.amenities.security": "Zona residencial tranquila",
-    "terrains.yadira.amenities.beachAccess": "15 min a playa",
-    "terrains.yadira.amenities.utilities": "Agua, electricidad disponible",
-    "terrains.yadira.amenities.infrastructure": "Acceso pavimentado",
-    "terrains.yadira.investmentData.potential": "Alto",
-    "terrains.yadira.investmentData.zoning": "Residencial/Comercial",
-    "terrains.yadira.investmentData.access": "Vía pública directa",
-
     // Modal Content
     "terrainModal.areaM2": "Área en m²",
     "terrainModal.areaFt2": "Área en pies²",
@@ -755,88 +546,5 @@ export const translations = {
     "terrainModal.requestPDF": "Consulta legal gratuita",
     "terrainModal.whatsappConcierge": "Agente WhatsApp",
     "terrainModal.securePurchase": "Agendar llamada",
-    "terrains.sanMarco.title": "Lote Agropecuaria San Marco",
-    "terrains.sanMarco.price": "$45,000 USD",
-    "terrains.sanMarco.location": "Santa Cruz, Guanacaste",
-    "terrains.sanMarco.area": "363 m²",
-    "terrains.sanMarco.status": "INSCRITO",
-    "terrains.sanMarco.amenities.security": "Zona tranquila y segura",
-    "terrains.sanMarco.amenities.beachAccess": "15 min a playas principales",
-    "terrains.sanMarco.amenities.utilities": "Agua y electricidad disponible",
-    "terrains.sanMarco.amenities.infrastructure": "Infraestructura desarrollada",
-    "terrains.sanMarco.investmentData.potential": "Alto",
-    "terrains.sanMarco.investmentData.zoning": "Agropecuario/Comercial",
-    "terrains.sanMarco.investmentData.access": "Vía pública directa",
-
-    // Contact Section - Enhanced Multi-Step (AGREGAR ESTAS)
-    "contact.steps.vision": "¿Cuál es tu visión?",
-    "contact.steps.details": "Detalles del proyecto",
-    "contact.steps.budget": "Presupuesto y timeline", 
-    "contact.steps.contact": "Información de contacto",
-
-    "contact.dreamProjectTitle": "¿Cuál es tu proyecto soñado?",
-    "contact.dreamProjectSubtitle": "Selecciona el tipo de proyecto que quieres desarrollar",
-
-    "contact.projectType.vacationHome": "Casa Vacacional",
-    "contact.projectType.investment": "Propiedad de Inversión",
-
-    "contact.projectDescriptions.house": "Tu hogar soñado en Costa Rica",
-    "contact.projectDescriptions.vacationHome": "Refugio de fin de semana",
-    "contact.projectDescriptions.investment": "Para generar ingresos", 
-    "contact.projectDescriptions.restaurant": "Espacio gastronómico único",
-    "contact.projectDescriptions.hotel": "Hospedaje con personalidad",
-    "contact.projectDescriptions.other": "Cuéntanos tu idea",
-
-    "contact.locationTitle": "¿Dónde lo imaginas?",
-    "contact.locationSubtitle": "La ubicación es clave para el éxito de tu proyecto",
-    "contact.locationHelper": "Menciona provincia, cantón, o características específicas como \"cerca de la playa\" o \"zona montañosa\"",
-
-    "contact.recommendationsTitle": "Recomendaciones personalizadas",
-    "contact.recommendations.guanacasteClimate": "Considera terrenos cerca de Guanacaste para mejor clima",
-    "contact.recommendations.tropicalDesign": "Diseño tropical brutalista se adapta perfecto al entorno",
-    "contact.recommendations.touristZones": "Zonas turísticas tienen mejor ROI para alquileres", 
-    "contact.recommendations.beachProperties": "Propiedades cerca de playas se valorizan 15% anual",
-    "contact.recommendations.premiumBudget": "Tu presupuesto permite materiales premium y vistas espectaculares",
-
-    "contact.budgetTimelineTitle": "Presupuesto y timeline",
-    "contact.budgetTimelineSubtitle": "Esto nos ayuda a recomendarte las mejores oportunidades",
-    "contact.budgetLabel": "Presupuesto estimado",
-    "contact.timelineLabel": "¿Cuándo quieres empezar?",
-
-    "contact.budget.under100k": "Menos de $100k",
-    "contact.budget.100k250k": "$100k - $250k", 
-    "contact.budget.250k500k": "$250k - $500k",
-    "contact.budget.over500k": "Más de $500k",
-
-    "contact.budgetDescriptions.under100k": "Terreno + casa básica",
-    "contact.budgetDescriptions.100k250k": "Casa completa con acabados",
-    "contact.budgetDescriptions.250k500k": "Proyecto premium con lujos",
-    "contact.budgetDescriptions.over500k": "Villa de ensueño",
-
-    "contact.timeline.asap": "Lo antes posible",
-    "contact.timeline.sixMonths": "En 6 meses",
-    "contact.timeline.oneYear": "En 1 año", 
-    "contact.timeline.flexible": "Flexible",
-
-    "contact.timelineDescriptions.asap": "Listo para empezar",
-    "contact.timelineDescriptions.sixMonths": "Tiempo para planificar",
-    "contact.timelineDescriptions.oneYear": "Proyecto a mediano plazo",
-    "contact.timelineDescriptions.flexible": "Cuando sea el momento perfecto",
-
-    "contact.finalStepTitle": "¡Último paso!",
-    "contact.finalStepSubtitle": "Información de contacto para agendar tu consulta gratuita",
-
-    "contact.projectSummary": "Resumen de tu proyecto:",
-    "contact.summaryType": "Tipo",
-    "contact.summaryLocation": "Ubicación",
-    "contact.summaryBudget": "Presupuesto",
-    "contact.summaryTimeline": "Timeline",
-
-    "contact.backButton": "Atrás", 
-    "contact.nextButton": "Siguiente",
-    "contact.sending": "Enviando...",
-    "contact.successMessage": "Mensaje enviado exitosamente. Te contactaremos pronto.",
-    "contact.errorMessage": "Error al enviar el mensaje. Por favor, intenta nuevamente.",
-    "contact.bottomMessage": "Te contactaremos en las próximas 24 horas para agendar tu consulta gratuita"
   }
 }

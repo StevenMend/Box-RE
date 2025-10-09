@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -29,6 +28,7 @@ export default function Header() {
     { key: "header.aboutUs", href: "#about-us" },
     { key: "header.consulting", href: "#consulting" },
     { key: "header.realEstate", href: "/inmobiliaria" },
+    { key: "header.terrains", href: "#terrain-map" }, // NUEVO ITEM
     { key: "header.reviews", href: "#reviews" },
     { key: "header.contact", href: "#contact" },
   ]

@@ -82,7 +82,6 @@ export const terrainTranslations = {
           infrastructure: "Infraestructura desarrollada"
         }
       },
-      // NUEVOS TERRENOS
       carlos: {
         title: "FINCA CARLOS - Desarrollo Premium",
         price: "$1,054,900",
@@ -144,17 +143,27 @@ export const terrainTranslations = {
       guarantee2: "Firma digital desde tu país",
       guarantee3: "Seguimiento de obra en plataforma online",
       guarantee4: "Concierge personal (desde tu llegada al aeropuerto)",
-      
-      // Nuevos botones de acción
       basicGuide: "Guía Básica Due Diligence",
       whatsappAgent: "Agente WhatsApp",
-      videoIntro: "Video Introductorio"
+      videoIntro: "Video Introductorio",
+      deposit: "Depósito (10%)",
+      depositConsult: "Consultar precio",
     },
 
     // Due Diligence Guide Content
     dueDiligenceGuide: {
       title: "Guía Básica de Due Diligence",
       subtitle: "Todo lo que necesitas saber antes de comprar un terreno en Costa Rica",
+      whatsappMessage: "Hola! Me interesa una asesoría de Due Diligence para:",
+      myName: "Mi nombre es",
+      myEmail: "y mi email es",
+      proposal: "Propuesta",
+      finca: "Finca",
+      area: "Área",
+      legalStatus: "Estado Legal",
+      financialProjection: "Proyección Financiera",
+      price: "Precio",
+      deposit: "Depósito",
       
       sections: {
         legalVerification: {
@@ -209,17 +218,21 @@ export const terrainTranslations = {
         subtitle: "Nuestros expertos pueden guiarte en todo el proceso",
         nameLabel: "Nombre completo",
         namePlaceholder: "Tu nombre completo",
-        emailLabel: "Correo electrónico", 
+        emailLabel: "Email", 
         emailPlaceholder: "tu@correo.com",
         phoneLabel: "WhatsApp",
-        phonePlaceholder: "+506 1234-5678",
-        terrainLabel: "Terreno de interés",
-        terrainPlaceholder: "¿Cuál terreno te interesa?",
-        messageLabel: "Mensaje adicional",
+        phonePlaceholder: "+506 8888 8888",
+        terrainLabel: "Propiedad seleccionada",
+        messageLabel: "Mensaje",
         messagePlaceholder: "Cuéntanos sobre tu proyecto o dudas específicas...",
-        submitButton: "Solicitar Asesoría Gratuita",
-        successMessage: "¡Gracias! Te contactaremos en las próximas 24 horas.",
-        errorMessage: "Error al enviar. Por favor intenta nuevamente."
+        submitButton: "Solicitar Asesoría",
+        sending: "Enviando...",
+        successMessage: "Mensaje enviado exitosamente. Te contactaremos pronto.",
+        errorMessage: "Error al enviar el mensaje. Por favor, intenta nuevamente.",
+        easyChat: "Easy Chat - WhatsApp",
+        generalConsult: "Consulta general",
+        multipleLocations: "Múltiples ubicaciones disponibles",
+        variousOptions: "Varias opciones"
       },
 
       whyChooseUs: {
@@ -318,7 +331,6 @@ export const terrainTranslations = {
           infrastructure: "Developed infrastructure"
         }
       },
-      // NEW TERRAINS
       carlos: {
         title: "FINCA CARLOS - Premium Development",
         price: "$1,054,900",
@@ -380,17 +392,27 @@ export const terrainTranslations = {
       guarantee2: "Digital signature from your country",
       guarantee3: "Online platform project tracking",
       guarantee4: "Personal concierge (from airport arrival)",
-      
-      // New action buttons
       basicGuide: "Basic Due Diligence Guide",
       whatsappAgent: "WhatsApp Agent",
-      videoIntro: "Introductory Video"
+      videoIntro: "Introductory Video",
+      deposit: "Deposit (10%)",
+      depositConsult: "Contact for price",
     },
 
     // Due Diligence Guide Content
     dueDiligenceGuide: {
       title: "Basic Due Diligence Guide",
       subtitle: "Everything you need to know before buying land in Costa Rica",
+      whatsappMessage: "Hi! I'm interested in Due Diligence consulting for:",
+      myName: "My name is",
+      myEmail: "and my email is",
+      proposal: "Proposal",
+      finca: "Property",
+      area: "Area",
+      legalStatus: "Legal Status",
+      financialProjection: "Financial Projection",
+      price: "Price",
+      deposit: "Deposit",
       
       sections: {
         legalVerification: {
@@ -445,17 +467,21 @@ export const terrainTranslations = {
         subtitle: "Our experts can guide you through the entire process",
         nameLabel: "Full name",
         namePlaceholder: "Your full name",
-        emailLabel: "Email address",
+        emailLabel: "Email",
         emailPlaceholder: "your@email.com",
         phoneLabel: "WhatsApp",
         phonePlaceholder: "+1 234-567-8900",
-        terrainLabel: "Terrain of interest",
-        terrainPlaceholder: "Which terrain interests you?",
-        messageLabel: "Additional message",
+        terrainLabel: "Selected property",
+        messageLabel: "Message",
         messagePlaceholder: "Tell us about your project or specific questions...",
-        submitButton: "Request Free Advisory",
-        successMessage: "Thank you! We'll contact you within 24 hours.",
-        errorMessage: "Error sending. Please try again."
+        submitButton: "Request inquiry",
+        sending: "Sending...",
+        successMessage: "Message sent successfully. We will contact you soon.",
+        errorMessage: "Error sending message. Please try again.",
+        easyChat: "Easy Chat - WhatsApp",
+        generalConsult: "General consultation",
+        multipleLocations: "Multiple locations available",
+        variousOptions: "Various options"
       },
 
       whyChooseUs: {

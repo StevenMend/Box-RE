@@ -85,7 +85,7 @@ const terrainMetadata = {
       legalStatus: "clean" as const
     },
     pricing: {
-      basePrice: "$95,000",
+      basePrice: "$720,532",
       suggestedPrice: "$110,000", 
       deposit: "$11,000"
     }
