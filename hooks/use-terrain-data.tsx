@@ -70,7 +70,7 @@ const terrainMetadata = {
       legalStatus: "pending" as const
     },
     pricing: {
-      basePrice: "Consultar",
+      basePrice: "$305.000",
       suggestedPrice: "Consultar",
       deposit: "Consultar"
     }
