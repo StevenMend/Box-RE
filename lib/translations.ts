@@ -7,7 +7,7 @@ export const translations = {
     "header.contact": "Contact",
     "header.realEstate": "Real Estate",
     "header.terrains": "Terrains",
-    "header.boxArchitects": "BOX ARCHITECTS",
+    "header.boxArchitects": "BOX RE",
 
     // Hero
     "hero.title1": "We design spaces",
@@ -34,51 +34,54 @@ export const translations = {
     // Nosotros Section (About Us)
     "aboutUs.missionTitle": "Our Mission",
     "aboutUs.missionText":
-      "At BOX ARCHITECTS, we design spaces with intention, soul, and purpose. We believe that architecture must adapt to its environment and honor the history of those who inhabit it. Each of our projects —whether a house, a restaurant, or a tourist lodge— is born from a love for what we do and a deep connection with nature.",
+    "Our mission is to obliterate the bureaucracy and chaos of traditional real-estate in Costa Rica. Buying land today takes 1–5 months, endless intermediaries, slow due-diligence, and legal mazes. BOX RE — founded by Steven Méndez (software architect & product creator) and Bryner Gutiérrez (architect & market-driven co-founder) — turns that nightmare into a seamless, verifiable digital experience. Precise 3D polygons, automated legal documentation and certifications, smart-contract reservations with on-chain deposits, and AI-powered cost estimation, contracts, and 3D visualization — all in one platform. What used to take months now happens in days. We’re solving a multi-billion-dollar bottleneck at the core of land development.",
     "aboutUs.visionTitle": "Our Vision",
     "aboutUs.visionText":
-      "We aim to transform the way architecture is lived and experienced in Costa Rica. We design authentic spaces that flow with the environment, respect ancestral construction knowledge, and integrate with intelligence and sensitivity into each place. Our goal is to create meaningful architecture for those who love what they do.",
+      "We’re building the most advanced land marketplace in Latin America: verified titles, blockchain-based reservations, and an AI layer that understands your property before any agent does. Our vision is to redefine how land is bought, sold, and developed — with transparency, speed, and data-driven precision. Born in Costa Rica, engineered to scale globally — connecting territories, architects, buyers, and investors into one intelligent ecosystem.",
 
     // Consultoria Section (Consulting)
-    "consulting.title": " Got an idea in mind?",
-    "consulting.subtitle":
-      "We offer a free consultation to listen to you and help shape your project. Whether you're an investor, entrepreneur, or simply building your dream home, we'll accompany you from idea to final design.",
-    "consulting.cta": "Schedule my free call",
-    "consulting.howToStartTitle": " How to get started?",
-    "consulting.step1Title": "1. Tell us your Idea",
-    "consulting.step1Text": "Complete the form with the details of your project.",
-    "consulting.step2Title": "2. We Schedule a Call",
-    "consulting.step2Text": "We will contact you to arrange a free consultation.",
-    "consulting.step3Title": "3. We Explore Solutions",
-    "consulting.step3Text": "We will discuss how we can materialize your vision.",
+   "consulting.title": "Got an idea in mind?",
+"consulting.subtitle":
+  "We offer a free strategy call to understand your investment goals and guide you through verified land opportunities. Whether you're an investor, entrepreneur, or planning a development, our platform connects data, design, and technology to help you make confident decisions.",
+"consulting.cta": "Schedule my free call",
+    "consulting.howToStartTitle": "How to get started?",
+    "consulting.step1Title": "1. Tell us what you're looking for",
+"consulting.step1Text": "Complete the form with details about the type of land or investment you’re interested in.",
+"consulting.step2Title": "2. We schedule a strategy call",
+"consulting.step2Text": "We’ll contact you to review your goals and show how our AI-powered platform can simplify your search and reservation process.",
+"consulting.step3Title": "3. We present tailored opportunities",
+"consulting.step3Text": "Receive verified land options with legal data, polygons, and blockchain-ready reservation tools — everything you need to invest confidently.",
 
-    // Reseñas Section (Reviews)
     "reviews.title": "Reviews",
-    "reviews.subtitle":
-      "Our clients' satisfaction is our greatest achievement. Learn about the experiences of those who have trusted BOX ARCHITECTS.",
-    "reviews.noReviews": "We will soon share our clients' experiences.",
-    "reviews.stats.projectsCompleted": "Projects Completed",
-    "reviews.stats.yearsExperience": "Years of Experience",
-    "reviews.stats.satisfiedClients": "Satisfied Clients",
-    "reviews.stats.awardsRecognitions": "Awards & Recognitions",
-    "reviews.testimonial1.text":
-      "Bryner and his team perfectly understood what we were looking for. The result is a house that breathes with the Costa Rican landscape.",
-    "reviews.testimonial1.name": "Ana Rodríguez",
-    "reviews.testimonial1.project": "Tropical Residence",
-    "reviews.testimonial1.location": "Heredia",
-    "reviews.testimonial2.text":
-      "BOX's vision for our boutique hotel was innovative and perfectly aligned with the natural environment. Their professionalism is outstanding.",
-    "reviews.testimonial2.name": "Luis Fernández",
-    "reviews.testimonial2.project": "Boutique Hotel Concept",
-    "reviews.testimonial2.location": "Guanacaste",
-    "reviews.ctaTitle": "Ready for your next project?",
-    "reviews.ctaSubtitle": "Join our satisfied clients and transform your architectural vision into reality.",
-    "reviews.ctaButton": "START PROJECT",
+"reviews.subtitle":
+  "Innovation and client trust define who we are. Discover real experiences with BOX RE — founded by Steven Méndez (software architect and product creator) and Bryner Gutiérrez (architect and co-founder focused on market strategy).",
+"reviews.noReviews": "We'll soon share new client experiences.",
+"reviews.stats.projectsCompleted": "Digital Projects",
+"reviews.stats.yearsExperience": "Years of Experience",
+"reviews.stats.satisfiedClients": "Satisfied Clients",
+"reviews.stats.awardsRecognitions": "Innovation Highlights",
+
+"reviews.testimonial1.text":
+  "Working with Steven and Bryner completely redefined how we see real estate. With AI-powered analysis, blockchain-based smart contracts, and a live interactive map of verified land polygons, the process was faster, safer, and fully transparent. We now manage our property directly from the same platform.",
+"reviews.testimonial1.name": "Carlos Ramirez",
+"reviews.testimonial1.project": "Pacific Residences",
+"reviews.testimonial1.location": "Tamarindo, Costa Rica",
+
+"reviews.testimonial2.text":
+  "The blend of architecture, blockchain, and technology led by Steven and Bryner gave us full confidence. Steven managed the technical and product development, while Bryner guided the architectural validation and market strategy. It truly feels like the future of real estate in Costa Rica.",
+"reviews.testimonial2.name": "Maria Lopez",
+"reviews.testimonial2.project": "Smart Reserve",
+"reviews.testimonial2.location": "Santa Cruz, Costa Rica",
+
+"reviews.ctaTitle": "Ready to digitize your next project?",
+"reviews.ctaSubtitle":
+  "Join the new era of real estate with BOX RE — where architecture, technology, and blockchain meet with purpose.",
+"reviews.ctaButton": "START PROJECT",
     
     // Sistema de reseñas - Agregar nueva reseña
     "reviews.addReview.button": "Add Review",
     "reviews.addReview.title": "Share Your Experience",
-    "reviews.addReview.subtitle": "Tell us about your experience with BOX ARCHITECTS and help other clients.",
+    "reviews.addReview.subtitle": "Tell us about your experience with BOX RE and help other clients.",
     "reviews.addReview.rating": "Rating",
     "reviews.addReview.name": "Your Name",
     "reviews.addReview.namePlaceholder": "Enter your full name",
@@ -87,14 +90,14 @@ export const translations = {
     "reviews.addReview.location": "Location",
     "reviews.addReview.locationPlaceholder": "e.g., San José, Costa Rica",
     "reviews.addReview.review": "Your Review",
-    "reviews.addReview.reviewPlaceholder": "Share your experience with BOX ARCHITECTS...",
+    "reviews.addReview.reviewPlaceholder": "Share your experience with BOX RE...",
     "reviews.addReview.submit": "Submit Review",
     "reviews.addReview.cancel": "Cancel",
 
     // Contact Section ✅ COMPLETO
     "contact.title": "Schedule Your Free Consultation",
     "contact.subtitle":
-      "Please complete the form below. We will respond shortly to schedule a call where we can show you how we can help bring your architectural vision to life.",
+      "Please complete the form below. We’ll contact you shortly to schedule a call and show you how our platform can help you find, analyze, and reserve verified land opportunities in Costa Rica.",
     "contact.fullName": "Full Name",
     "contact.fullNamePlaceholder": "Your full name",
     "contact.email": "Email Address",
@@ -112,7 +115,7 @@ export const translations = {
     "contact.projectLocation": "Project Location",
     "contact.projectLocationPlaceholder": "Province, Canton",
     "contact.idea": "Briefly tell us your idea",
-    "contact.ideaPlaceholder": "Ex: I want to build a small house for rent near the beach",
+    "contact.ideaPlaceholder": "Ex: I want to invest in land near the beach to develop a small tourism project",
     "contact.submitButton": "Submit Inquiry",
     "contact.sending": "Sending...",
     "contact.successMessage": "Message sent successfully. We will contact you soon.",
@@ -120,13 +123,13 @@ export const translations = {
     "contact.bottomMessage": "We will contact you within 24 hours to discuss your project",
 
     // Footer
-    "footer.description": "Architecture studio specializing in tropical brutalist design in Costa Rica.",
+    "footer.description": "Real estate and architecture studio pioneering AI-driven design, verified land data, and blockchain contracts across Costa Rica.",
     "footer.navigation": "Navigation",
     "footer.legal": "Legal",
     "footer.terms": "Terms",
     "footer.privacyPolicy": "Privacy Policy",
     "footer.cookies": "Cookies",
-    "footer.copyright": "© 2025 BOX ARCHITECTS Costa Rica. All rights reserved.",
+    "footer.copyright": "© 2025 BOX RE Costa Rica. All rights reserved.",
 
     // Services Section
     "services.title": "Services",
@@ -168,18 +171,18 @@ export const translations = {
     // Terms and Conditions Page
     "terms.title": "Terms and Conditions",
     "terms.paragraph1":
-      "Welcome to BOX ARCHITECTS. By accessing or using our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.",
+      "Welcome to BOX RE. By accessing or using our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.",
     "terms.paragraph2":
       "The content provided on this website is for general informational purposes only. We reserve the right to modify or discontinue any aspect of the website at any time without prior notice. We are not liable for any inaccuracies or omissions in the information provided.",
     "terms.paragraph3":
-      "All intellectual property rights related to the content and design of this website belong to BOX ARCHITECTS. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.",
+      "All intellectual property rights related to the content and design of this website belong to BOX RE. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.",
     "terms.paragraph4":
       "Your use of this website is at your sole risk. We do not guarantee that the website will be uninterrupted, error-free, or free of viruses or other harmful components. We shall not be liable for any damages arising from the use of this website.",
 
     // Privacy Policy Page
     "privacyPolicy.title": "Privacy Policy",
     "privacyPolicy.paragraph1":
-      "At BOX ARCHITECTS, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.",
+      "At BOX RE, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.",
     "privacyPolicy.paragraph2":
       "We collect personal information that you voluntarily provide to us, such as your name, email address, phone number, and project details when you fill out our contact form. We use this information solely to respond to your inquiries, provide consultation services, and improve our offerings.",
     "privacyPolicy.paragraph3":
@@ -226,7 +229,7 @@ export const translations = {
 
     // Terrain Map Section
     "terrainMap.title": "Explore Premium Terrains",
-    "terrainMap.subtitle": "Each property legally verified with National Registry data and complete investment analysis.",
+    "terrainMap.subtitle": "Legally verified land with National Registry data, AI-powered investment analysis, and blockchain reservation — all in one interactive map.",
     "terrainMap.stats.verifiedTitles": "Verified Titles",
     "terrainMap.stats.provinces": "Provinces", 
     "terrainMap.stats.premiumLocations": "Premium Locations",
@@ -281,7 +284,7 @@ export const translations = {
     "header.contact": "Contacto",
     "header.realEstate": "Inmobiliaria",
     "header.terrains": "Terrenos",
-    "header.boxArchitects": "BOX ARCHITECTS",
+    "header.boxArchitects": "BOX RE",
 
     // Hero
     "hero.title1": "Diseñamos espacios",
@@ -308,51 +311,54 @@ export const translations = {
     // Nosotros Section (About Us)
     "aboutUs.missionTitle": "Nuestra Misión",
     "aboutUs.missionText":
-      "En BOX ARCHITECTS, diseñamos espacios con intención, alma y propósito. Creemos que la arquitectura debe adaptarse a su entorno y honrar la historia de quienes la habitan. Cada uno de nuestros proyectos —ya sea una casa, un restaurante o un lodge turístico— nace del amor por lo que hacemos y una profunda conexión con la naturaleza.",
+      "Nuestra misión es destruir la burocracia y el caos del sector inmobiliario tradicional en Costa Rica. Hoy, comprar un terreno puede tardar entre 1 y 5 meses, pasar por docenas de intermediarios, inspecciones confusas y procesos legales interminables. En BOX RE, creado por Steven Méndez (arquitecto de software y creador de producto) y Bryner Gutiérrez (arquitecto y co-fundador orientado al mercado), transformamos ese infierno en una experiencia fluida, digital y verificable. Polígonos exactos en mapa 3D, documentación y certificaciones automáticas, contratos inteligentes con reserva on-chain, IA para presupuestos, proyecciones y visualizaciones arquitectónicas —todo desde una sola plataforma. Lo que antes tardaba meses, ahora ocurre en días. Así resolvemos un problema de miles de millones en el corazón del mercado inmobiliario costarricense.",
     "aboutUs.visionTitle": "Nuestra Visión",
     "aboutUs.visionText":
-      "Buscamos transformar la forma en que la arquitectura se vive y se experimenta en Costa Rica. Diseñamos espacios auténticos que fluyen con el entorno, respetan el conocimiento constructivo ancestral y se integran con inteligencia y sensibilidad en cada lugar. Nuestro objetivo es crear arquitectura significativa para quienes aman lo que hacen.",
+      "Creamos el marketplace de terrenos más avanzado de Latinoamérica: títulos verificados, reservas automáticas con blockchain y una capa de IA que entiende tu terreno antes que cualquier agente. Nuestra visión es reescribir la forma en que se compran, venden y desarrollan propiedades —con total transparencia, velocidad y precisión. Nacimos en Costa Rica, pero nuestra arquitectura tecnológica está lista para escalar globalmente, conectando territorios, arquitectos, compradores e inversores en un mismo ecosistema inteligente.",
 
     // Consultoria Section (Consulting)
-    "consulting.title": " ¿Tienes una idea en mente?",
-    "consulting.subtitle":
-      "Ofrecemos una consulta gratuita para escucharte y ayudarte a dar forma a tu proyecto. Seas inversionista, emprendedor o simplemente estés construyendo la casa de tus sueños, te acompañaremos desde la idea hasta el diseño final.",
-    "consulting.cta": "Agendar mi llamada gratuita",
-    "consulting.howToStartTitle": " ¿Cómo empezar?",
-    "consulting.step1Title": "1. Cuéntanos tu Idea",
-    "consulting.step1Text": "Completa el formulario con los detalles de tu proyecto.",
-    "consulting.step2Title": "2. Agendamos una Llamada",
-    "consulting.step2Text": "Te contactaremos para coordinar una consulta gratuita.",
-    "consulting.step3Title": "3. Exploramos Soluciones",
-    "consulting.step3Text": "Discutiremos cómo podemos materializar tu visión.",
+   "consulting.title": "¿Tienes una idea en mente?",
+   "consulting.subtitle":
+   "Ofrecemos una llamada estratégica gratuita para comprender tus objetivos de inversión y guiarte entre oportunidades de terrenos verificados. Ya seas inversionista, emprendedor o estés planificando un desarrollo, nuestra plataforma conecta datos, diseño y tecnología para ayudarte a tomar decisiones con confianza.",
+   "consulting.cta": "Agendar mi llamada gratuita",
+    "consulting.howToStartTitle": "¿Cómo empezar?",
+    "consulting.step1Title": "1. Cuéntanos qué estás buscando",
+    "consulting.step1Text": "Completá el formulario con los detalles del tipo de terreno o inversión que te interesa.",
+    "consulting.step2Title": "2. Agendamos una llamada estratégica",
+    "consulting.step2Text": "Te contactaremos para revisar tus objetivos y mostrarte cómo nuestra plataforma con IA simplifica el proceso de búsqueda y reserva.",
+    "consulting.step3Title": "3. Te presentamos oportunidades personalizadas",
+    "consulting.step3Text": "Recibí opciones de terrenos verificados con datos legales, polígonos exactos y herramientas de reserva con blockchain — todo lo que necesitás para invertir con confianza.",
 
-    // Reseñas Section (Reviews)
     "reviews.title": "Reseñas",
-    "reviews.subtitle":
-      "La satisfacción de nuestros clientes es nuestro mayor logro. Conoce las experiencias de quienes han confiado en BOX ARCHITECTS.",
-    "reviews.noReviews": "Pronto compartiremos las experiencias de nuestros clientes.",
-    "reviews.stats.projectsCompleted": "Proyectos Completados",
-    "reviews.stats.yearsExperience": "Años de Experiencia",
-    "reviews.stats.satisfiedClients": "Clientes Satisfechos",
-    "reviews.stats.awardsRecognitions": "Premios y Reconocimientos",
-    "reviews.testimonial1.text":
-      "Bryner y su equipo entendieron a la perfección lo que buscábamos. El resultado es una casa que respira con el paisaje costarricense.",
-    "reviews.testimonial1.name": "Ana Rodríguez",
-    "reviews.testimonial1.project": "Residencia Tropical",
-    "reviews.testimonial1.location": "Heredia",
-    "reviews.testimonial2.text":
-      "La visión de BOX para nuestro hotel boutique fue innovadora y se alineó perfectamente con el entorno natural. Su profesionalismo es sobresaliente.",
-    "reviews.testimonial2.name": "Luis Fernández",
-    "reviews.testimonial2.project": "Concepto Hotel Boutique",
-    "reviews.testimonial2.location": "Guanacaste",
-    "reviews.ctaTitle": "¿Listo para tu próximo proyecto?",
-    "reviews.ctaSubtitle": "Únete a nuestros clientes satisfechos y transforma tu visión arquitectónica en realidad.",
-    "reviews.ctaButton": "INICIAR PROYECTO",
+"reviews.subtitle":
+  "La innovación y la confianza de nuestros clientes son el reflejo de lo que hacemos. Conoce experiencias reales con BOX RE, el ecosistema fundado por Steven Méndez (arquitecto de software y creador de producto) y Bryner Gutiérrez (arquitecto y cofundador enfocado en mercado).",
+"reviews.noReviews": "Pronto compartiremos nuevas experiencias de nuestros clientes.",
+"reviews.stats.projectsCompleted": "Proyectos Digitales",
+"reviews.stats.yearsExperience": "Años de Experiencia",
+"reviews.stats.satisfiedClients": "Clientes Satisfechos",
+"reviews.stats.awardsRecognitions": "Innovaciones Destacadas",
+
+"reviews.testimonial1.text":
+  "Trabajar con Steven y Bryner cambió por completo nuestra visión del sector inmobiliario. Gracias al uso de contratos inteligentes, análisis con IA y un mapa interactivo con polígonos en tiempo real, todo el proceso fue más rápido, seguro y transparente. Hoy administramos nuestra propiedad desde la misma plataforma.",
+"reviews.testimonial1.name": "Carlos Ramírez",
+"reviews.testimonial1.project": "Residencias del Pacífico",
+"reviews.testimonial1.location": "Tamarindo, Guanacaste",
+
+"reviews.testimonial2.text":
+  "La combinación de arquitectura, blockchain y tecnología liderada por Steven y Bryner nos dio total confianza. Steven dirigió la parte técnica y de producto, mientras Bryner guió la validación arquitectónica y de mercado. Es el futuro de la inversión inmobiliaria en Costa Rica.",
+"reviews.testimonial2.name": "María López",
+"reviews.testimonial2.project": "Reserva Inteligente",
+"reviews.testimonial2.location": "Santa Cruz, Guanacaste",
+
+"reviews.ctaTitle": "¿Listo para digitalizar tu proyecto?",
+"reviews.ctaSubtitle":
+  "Únete a la nueva era inmobiliaria con BOX RE — donde arquitectura, tecnología y blockchain se unen con propósito.",
+"reviews.ctaButton": "INICIAR PROYECTO",
     
     // Sistema de reseñas - Agregar nueva reseña
     "reviews.addReview.button": "Dejar Reseña",
     "reviews.addReview.title": "Comparte tu Experiencia",
-    "reviews.addReview.subtitle": "Cuéntanos sobre tu experiencia con BOX ARCHITECTS y ayuda a otros clientes.",
+    "reviews.addReview.subtitle": "Cuéntanos sobre tu experiencia con BOX RE y ayuda a otros clientes.",
     "reviews.addReview.rating": "Calificación",
     "reviews.addReview.name": "Tu Nombre",
     "reviews.addReview.namePlaceholder": "Ingresa tu nombre completo",
@@ -361,14 +367,14 @@ export const translations = {
     "reviews.addReview.location": "Ubicación",
     "reviews.addReview.locationPlaceholder": "ej: San José, Costa Rica",
     "reviews.addReview.review": "Tu Reseña",
-    "reviews.addReview.reviewPlaceholder": "Comparte tu experiencia con BOX ARCHITECTS...",
+    "reviews.addReview.reviewPlaceholder": "Comparte tu experiencia con BOX RE...",
     "reviews.addReview.submit": "Enviar Reseña",
     "reviews.addReview.cancel": "Cancelar",
 
     // Contact Section ✅ COMPLETO
     "contact.title": "Agenda tu Consulta Gratuita",
     "contact.subtitle":
-      "Por favor, completa el siguiente formulario. Te responderemos en breve para agendar una llamada donde podremos mostrarte cómo podemos ayudarte a materializar tu visión arquitectónica.",
+      "Por favor completá el siguiente formulario. Te contactaremos pronto para agendar una llamada y mostrarte cómo nuestra plataforma te ayuda a encontrar, analizar y reservar terrenos verificados en Costa Rica.",
     "contact.fullName": "Nombre Completo",
     "contact.fullNamePlaceholder": "Tu nombre completo",
     "contact.email": "Correo Electrónico",
@@ -386,7 +392,7 @@ export const translations = {
     "contact.projectLocation": "Ubicación del Proyecto",
     "contact.projectLocationPlaceholder": "Provincia, Cantón",
     "contact.idea": "Cuéntanos brevemente tu idea",
-    "contact.ideaPlaceholder": "Ej: Quiero construir una pequeña casa para alquiler cerca de la playa",
+    "contact.ideaPlaceholder": "Ej: Quiero invertir en un terreno cerca de la playa para desarrollar un proyecto turístico",
     "contact.submitButton": "Enviar Consulta",
     "contact.sending": "Enviando...",
     "contact.successMessage": "Mensaje enviado exitosamente. Te contactaremos pronto.",
@@ -394,13 +400,13 @@ export const translations = {
     "contact.bottomMessage": "Te contactaremos dentro de 24 horas para discutir tu proyecto",
 
     // Footer
-    "footer.description": "Estudio de arquitectura especializado en diseño brutalista tropical en Costa Rica.",
+    "footer.description": "Estudio inmobiliario y de arquitectura que integra diseño, datos verificados y contratos inteligentes con blockchain en Costa Rica.",
     "footer.navigation": "Navegación",
     "footer.legal": "Legal",
     "footer.terms": "Términos",
     "footer.privacyPolicy": "Política de Privacidad",
     "footer.cookies": "Cookies",
-    "footer.copyright": "© 2025 BOX ARCHITECTS Costa Rica. Todos los derechos reservados.",
+    "footer.copyright": "© 2025 BOX RE Costa Rica. Todos los derechos reservados.",
 
     // Services Section
     "services.title": "Servicios",
@@ -443,18 +449,18 @@ export const translations = {
     // Terms and Conditions Page
     "terms.title": "Términos y Condiciones",
     "terms.paragraph1":
-      "Bienvenido a BOX ARCHITECTS. Al acceder o utilizar nuestro sitio web, usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web.",
+      "Bienvenido a BOX RE. Al acceder o utilizar nuestro sitio web, usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web.",
     "terms.paragraph2":
       "El contenido proporcionado en este sitio web es solo para fines informativos generales. Nos reservamos el derecho de modificar o descontinuar cualquier aspecto del sitio web en cualquier momento sin previo aviso. No somos responsables de ninguna inexactitud u omisión en la información proporcionada.",
     "terms.paragraph3":
-      "Todos los derechos de propiedad intelectual relacionados con el contenido y el diseño de este sitio web pertenecen a BOX ARCHITECTS. El uso, la reproducción o la distribución no autorizados de cualquier contenido están estrictamente prohibidos.",
+      "Todos los derechos de propiedad intelectual relacionados con el contenido y el diseño de este sitio web pertenecen a BOX RE. El uso, la reproducción o la distribución no autorizados de cualquier contenido están estrictamente prohibidos.",
     "terms.paragraph4":
       "El uso de este sitio web es bajo su propio riesgo. No garantizamos que el sitio web sea ininterrumpido, libre de errores o libre de virus u otros componentes dañinos. No seremos responsables de ningún daño que surja del uso de este sitio web.",
 
     // Privacy Policy Page
     "privacyPolicy.title": "Política de Privacidad",
     "privacyPolicy.paragraph1":
-      "En BOX ARCHITECTS, nos comprometemos a proteger su privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos su información personal cuando visita nuestro sitio web o interactúa con nuestros servicios.",
+      "En BOX RE, nos comprometemos a proteger su privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos su información personal cuando visita nuestro sitio web o interactúa con nuestros servicios.",
     "privacyPolicy.paragraph2":
       "Recopilamos información personal que usted nos proporciona voluntariamente, como su nombre, dirección de correo electrónico, número de teléfono y detalles del proyecto cuando completa nuestro formulario de contacto. Utilizamos esta información únicamente para responder a sus consultas, proporcionar servicios de consultoría y mejorar nuestras ofertas.",
     "privacyPolicy.paragraph3":
@@ -501,7 +507,7 @@ export const translations = {
 
     // Terrain Map Section  
     "terrainMap.title": "Explora Terrenos Premium",
-    "terrainMap.subtitle": "Cada propiedad verificada legalmente con datos del Registro Nacional y análisis completo de inversión.",
+    "terrainMap.subtitle": "Terrenos verificados con Registro Nacional, análisis de inversión inteligente y reserva blockchain — todo en un solo mapa interactivo.",
     "terrainMap.stats.verifiedTitles": "Títulos Verificados",
     "terrainMap.stats.provinces": "Provincias",
     "terrainMap.stats.premiumLocations": "Ubicaciones Premium", 

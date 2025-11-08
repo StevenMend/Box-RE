@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useTranslation } from "@/lib/i18n"
 
 export interface Review {
   id: string
@@ -13,55 +14,57 @@ export interface Review {
   isUserGenerated?: boolean
 }
 
-// Reseñas hardcodeadas originales
-const defaultReviews: Review[] = [
-  {
-    id: "default-1",
-    name: "Ana Rodríguez",
-    project: "Residencia Tropical",
-    location: "Heredia",
-    rating: 5,
-    text: "Bryner y su equipo entendieron a la perfección lo que buscábamos. El resultado es una casa que respira con el paisaje costarricense.",
-    createdAt: "2024-01-15",
-    isUserGenerated: false
-  },
-  {
-    id: "default-2", 
-    name: "Luis Fernández",
-    project: "Concepto Hotel Boutique",
-    location: "Guanacaste",
-    rating: 5,
-    text: "La visión de BOX para nuestro hotel boutique fue innovadora y se alineó perfectamente con el entorno natural. Su profesionalismo es sobresaliente.",
-    createdAt: "2024-02-20",
-    isUserGenerated: false
-  }
-]
-
 export function useReviews() {
+  const { t } = useTranslation()
   const [userReviews, setUserReviews] = useState<Review[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
-  // Cargar reseñas de localStorage al montar
+  // ---- Reseñas base según idioma activo ----
+  const defaultReviews: Review[] = [
+    {
+      id: "default-1",
+      name: t("reviews.testimonial1.name"),
+      project: t("reviews.testimonial1.project"),
+      location: t("reviews.testimonial1.location"),
+      rating: 5,
+      text: t("reviews.testimonial1.text"),
+      createdAt: "2025-02-19",
+      isUserGenerated: false,
+    },
+    {
+      id: "default-2",
+      name: t("reviews.testimonial2.name"),
+      project: t("reviews.testimonial2.project"),
+      location: t("reviews.testimonial2.location"),
+      rating: 5,
+      text: t("reviews.testimonial2.text"),
+      createdAt: "2025-01-14",
+      isUserGenerated: false,
+    },
+  ]
+  // -------------------------------------------
+
+  // Cargar reseñas del localStorage (opcional)
   useEffect(() => {
     try {
-      const stored = localStorage.getItem('box-architects-reviews')
+      const stored = localStorage.getItem("box-architects-reviews")
       if (stored) {
         const parsed = JSON.parse(stored)
         setUserReviews(parsed)
       }
     } catch (error) {
-      console.error('Error loading reviews from localStorage:', error)
+      console.error("Error loading reviews from localStorage:", error)
     } finally {
       setIsLoading(false)
     }
   }, [])
 
-  // Guardar reseñas en localStorage cuando cambien
+  // Guardar reseñas en localStorage
   const saveToStorage = (reviews: Review[]) => {
     try {
-      localStorage.setItem('box-architects-reviews', JSON.stringify(reviews))
+      localStorage.setItem("box-architects-reviews", JSON.stringify(reviews))
     } catch (error) {
-      console.error('Error saving reviews to localStorage:', error)
+      console.error("Error saving reviews to localStorage:", error)
     }
   }
 
@@ -77,26 +80,26 @@ export function useReviews() {
       id: `user-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       ...reviewData,
       createdAt: new Date().toISOString(),
-      isUserGenerated: true
+      isUserGenerated: true,
     }
 
     const updatedReviews = [...userReviews, newReview]
     setUserReviews(updatedReviews)
     saveToStorage(updatedReviews)
-    
+
     return newReview
   }
 
-  // Eliminar reseña (solo las generadas por usuarios)
+  // Eliminar reseña (solo generadas por usuarios)
   const deleteReview = (reviewId: string) => {
-    const updatedReviews = userReviews.filter(review => review.id !== reviewId)
+    const updatedReviews = userReviews.filter((r) => r.id !== reviewId)
     setUserReviews(updatedReviews)
     saveToStorage(updatedReviews)
   }
 
-  // Combinar reseñas default + user, ordenadas por fecha
-  const allReviews = [...defaultReviews, ...userReviews].sort((a, b) => 
-    new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+  // Combinar reseñas traducidas + de usuario
+  const allReviews = [...defaultReviews, ...userReviews].sort(
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
   )
 
   return {
@@ -104,6 +107,6 @@ export function useReviews() {
     userReviews,
     isLoading,
     addReview,
-    deleteReview
+    deleteReview,
   }
 }

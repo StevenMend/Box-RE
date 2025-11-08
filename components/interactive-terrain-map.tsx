@@ -18,6 +18,8 @@ export default function InteractiveTerrainMap() {
   const [mapError, setMapError] = useState<string | null>(null)
   const [selectedTerrain, setSelectedTerrain] = useState<any>(null)
   const [showDueDiligence, setShowDueDiligence] = useState(false)
+  const [showBlockchainReservation, setShowBlockchainReservation] = useState(false)
+
 
   // Load terrain data from KML files
   const { terrains, loading: dataLoading, error: dataError, getTerrainTranslation } = useTerrainData(language)
@@ -96,6 +98,30 @@ export default function InteractiveTerrainMap() {
     const videoUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     window.open(videoUrl, '_blank')
   }
+  const handleSmartContractClick = async () => {
+  // Silent notification to YOU for tracking
+  try {
+    const notificationPayload = {
+      type: 'smart_contract_modal_opened',
+      terrain: selectedTerrain?.title || 'N/A',
+      location: selectedTerrain?.location || 'N/A',
+      price: selectedTerrain?.price || 'N/A',
+      timestamp: new Date().toISOString(),
+      _subject: `🔗 Smart Contract Modal - ${selectedTerrain?.title || 'General'}`,
+      _replyto: 'noreply@boxarchitects.com'
+    }
+
+    fetch('https://formspree.io/f/mrbqbqbj', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(notificationPayload)
+    }).catch(err => console.log('Notification error:', err))
+  } catch (error) {
+    console.log('Silent notification failed:', error)
+  }
+
+  setShowBlockchainReservation(true)
+}
 
   // Initialize Google Maps
   useEffect(() => {
@@ -347,6 +373,7 @@ export default function InteractiveTerrainMap() {
             onDueDiligenceClick={handleDueDiligenceClick}
             onWhatsAppClick={handleWhatsAppClick}
             onVideoClick={handleVideoClick}
+            onSmartContractClick={handleSmartContractClick}
             getTerrainTranslation={getTerrainTranslation}
           />
         )}
@@ -357,6 +384,29 @@ export default function InteractiveTerrainMap() {
           onClose={() => setShowDueDiligence(false)}
           selectedTerrain={selectedTerrain}
         />
+
+        {/* Blockchain Reservation Modal - PLACEHOLDER */}
+        {showBlockchainReservation && (
+          <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm">
+            <div className="bg-gradient-to-br from-purple-900 to-indigo-900 border border-purple-500/30 rounded-2xl p-8 max-w-md w-full">
+              <h2 className="text-2xl font-bold text-white mb-4">🎉 Smart Contract Reservation</h2>
+              <p className="text-gray-300 mb-6">
+                This is where the blockchain magic happens! We'll build the full reservation flow next.
+              </p>
+              <div className="space-y-2 text-sm text-gray-400 mb-6">
+                <p>✅ Wallet: Connected</p>
+                <p>✅ Network: Fuji Testnet</p>
+                <p>✅ Property: {selectedTerrain?.title}</p>
+              </div>
+              <button
+                onClick={() => setShowBlockchainReservation(false)}
+                className="w-full bg-white text-black py-3 rounded-xl font-medium hover:bg-gray-200 transition-colors"
+              >
+                Close (Coming Soon)
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )

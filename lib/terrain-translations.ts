@@ -148,6 +148,10 @@ export const terrainTranslations = {
       videoIntro: "Video Introductorio",
       deposit: "Depósito (10%)",
       depositConsult: "Consultar precio",
+      reserveSmartContract: "Reservar con Smart Contract",
+      connectWalletFirst: "Conectar Wallet",  
+      wrongNetwork: "Red Incorrecta",
+      switchToFuji: "Cambiar a Fuji Testnet",
     },
 
     // Due Diligence Guide Content
@@ -212,6 +216,25 @@ export const terrainTranslations = {
           ]
         }
       },
+      blockchainReservation: {
+  title: "Reserva con Smart Contract",
+  subtitle: "Reserva segura mediante contrato inteligente en Avalanche",
+  propertyDetails: "Detalles de la Propiedad",
+  depositAmount: "Monto del Depósito (10%)",
+  yourWallet: "Tu Wallet",
+  network: "Red",
+  fujiTestnet: "Avalanche Fuji Testnet",
+  wrongNetwork: "Red incorrecta",
+  pleaseSwitch: "Por favor cambia a Avalanche Fuji Testnet",
+  switchNetwork: "Cambiar Red",
+  confirmReservation: "Confirmar Reserva",
+  processing: "Procesando...",
+  success: "¡Reserva Exitosa!",
+  successMessage: "Tu propiedad ha sido reservada exitosamente",
+  transactionHash: "Hash de Transacción",
+  error: "Error en la Reserva",
+  close: "Cerrar"
+},
 
       contactForm: {
         title: "¿Necesitas ayuda con tu Due Diligence?",
@@ -397,6 +420,10 @@ export const terrainTranslations = {
       videoIntro: "Introductory Video",
       deposit: "Deposit (10%)",
       depositConsult: "Contact for price",
+      reserveSmartContract: "Reserve with Smart Contract",
+      connectWalletFirst: "Connect Wallet",
+      wrongNetwork: "Wrong Network",
+      switchToFuji: "Switch to Fuji Testnet",
     },
 
     // Due Diligence Guide Content
@@ -481,7 +508,27 @@ export const terrainTranslations = {
         easyChat: "Easy Chat - WhatsApp",
         generalConsult: "General consultation",
         multipleLocations: "Multiple locations available",
-        variousOptions: "Various options"
+        variousOptions: "Various options",
+      },
+
+      blockchainReservation: {
+        title: "Reserve with Smart Contract",
+        ubtitle: "Secure reservation via smart contract on Avalanche",
+        propertyDetails: "Property Details",
+        depositAmount: "Deposit Amount (10%)",
+        yourWallet: "Your Wallet",
+        network: "Network",
+        fujiTestnet: "Avalanche Fuji Testnet",
+        wrongNetwork: "Wrong network",
+        pleaseSwitch: "Please switch to Avalanche Fuji Testnet",
+        switchNetwork: "Switch Network",
+        confirmReservation: "Confirm Reservation",
+        processing: "Processing...",
+        success: "Reservation Successful!",
+        successMessage: "Your property has been successfully reserved",
+        transactionHash: "Transaction Hash",
+        error: "Reservation Error",
+        close: "Close",
       },
 
       whyChooseUs: {

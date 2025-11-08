@@ -2,9 +2,17 @@
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
 import { translations } from "./translations"
+import { reTranslations } from "./re-translations"
 
 type Language = "en" | "es"
-type TranslationKeys = keyof (typeof translations)["en"]
+
+// Combinar todas las traducciones
+const allTranslations = {
+  en: { ...translations.en, ...reTranslations.en },
+  es: { ...translations.es, ...reTranslations.es }
+}
+
+type TranslationKeys = keyof typeof allTranslations.en
 
 interface TranslationContextType {
   language: Language
@@ -20,9 +28,8 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     setMounted(true)
-    // Solo acceder a localStorage después del mount (client-side)
     const storedLang = localStorage.getItem("appLang") as Language
-    if (storedLang && translations[storedLang]) {
+    if (storedLang && allTranslations[storedLang]) {
       setLanguageState(storedLang)
       document.documentElement.lang = storedLang
     } else {
@@ -32,7 +39,7 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
   }, [])
 
   const setLanguage = (lang: Language) => {
-    if (translations[lang]) {
+    if (allTranslations[lang]) {
       setLanguageState(lang)
       if (mounted) {
         localStorage.setItem("appLang", lang)
@@ -44,10 +51,9 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
   }
 
   const t = (key: TranslationKeys): string => {
-    return translations[language][key] || translations["en"][key] || key
+    return allTranslations[language][key] || allTranslations["en"][key] || key
   }
 
-  // Evitar flash de contenido incorrecto durante SSR
   if (!mounted) {
     return null
   }

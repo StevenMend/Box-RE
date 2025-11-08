@@ -25,12 +25,12 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { key: "header.aboutUs", href: "#about-us" },
-    { key: "header.consulting", href: "#consulting" },
-    { key: "header.realEstate", href: "/inmobiliaria" },
-    { key: "header.terrains", href: "#terrain-map" }, // NUEVO ITEM
-    { key: "header.reviews", href: "#reviews" },
-    { key: "header.contact", href: "#contact" },
+   { key: "header.terrains", href: "#terrain-map" }, // NUEVO ITEM
+   { key: "header.realEstate", href: "/inmobiliaria" },
+   { key: "header.contact", href: "#contact" },
+   { key: "header.consulting", href: "#consulting" },
+   { key: "header.reviews", href: "#reviews" },
+   { key: "header.aboutUs", href: "#about-us" },
   ]
 
   // Función para manejar clicks en navegación
@@ -101,7 +101,7 @@ export default function Header() {
             <div className="relative w-10 h-10 md:w-12 md:h-12">
               <Image
                 src="/images/BOX LOGO BLANCO.png"
-                alt={t("header.boxArchitects")}
+                alt={t("header.boxArchitect")}
                 fill
                 className="object-contain"
                 priority

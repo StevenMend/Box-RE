@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import SimpleLogoIntro from "@/components/simple-logo-intro"
 import Header from "@/components/header"
-import StaticHero from "@/components/static-hero"
+import BlockchainHero from "@/components/blockchain-hero"
 import InteractiveProjectsSection from "@/components/interactive-projects-section"
 import NosotrosSection from "@/components/nosotros-section"
 import ConsultoriaSection from "@/components/consultoria-section"
@@ -14,7 +14,6 @@ import InmobiliariaSection from "@/components/inmobiliaria-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import InteractiveTerrainMap from "@/components/interactive-terrain-map"
-import CostaRicaProvinceMap from "@/components/costa-rica-province-map" // Add this import
 
 function HomeContent() {
   const [loading, setLoading] = useState(true)
@@ -23,10 +22,8 @@ function HomeContent() {
 
   useEffect(() => {
     if (shouldGoToContact) {
-      // Si viene con ?contact=true, saltar la intro
       setLoading(false)
     } else {
-      // Comportamiento normal con intro
       const timer = setTimeout(() => {
         setLoading(false)
       }, 2300)
@@ -35,14 +32,12 @@ function HomeContent() {
   }, [shouldGoToContact])
 
   useEffect(() => {
-    // Hacer scroll al formulario después de que cargue la página
     if (!loading && shouldGoToContact) {
       const timer = setTimeout(() => {
         const contactSection = document.getElementById('contact')
         if (contactSection) {
           contactSection.scrollIntoView({ behavior: 'smooth' })
           console.log('Scroll to contact executed successfully')
-          // NO limpiar URL para evitar scroll hacia arriba
         }
       }, 300)
       return () => clearTimeout(timer)
@@ -65,14 +60,14 @@ function HomeContent() {
           >
             <Header />
             <main>
-              <StaticHero />
-              <InteractiveProjectsSection />
-              <NosotrosSection />
-              <ConsultoriaSection />
-              <ReseñasSection />
-              <InmobiliariaSection />
+              <BlockchainHero />
               <InteractiveTerrainMap />
-              <ContactSection />
+             <NosotrosSection />
+             <InmobiliariaSection />
+             <ContactSection />
+              <InteractiveProjectsSection />
+              <ConsultoriaSection />
+             <ReseñasSection />
             </main>
             <Footer />
           </motion.div>
