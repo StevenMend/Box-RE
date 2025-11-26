@@ -3,12 +3,12 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useTranslation } from "@/lib/i18n"
-import { useWallet } from "@/lib/WalletProvider"
+import { useWdk } from "@/lib/contexts/WdkContext"
 import { Wallet, Building2, CheckCircle } from "lucide-react"
 
 export default function BlockchainHero() {
   const { t } = useTranslation()
-  const { isConnected, isConnecting, connectWallet, address } = useWallet()
+  const { isInitialized, isLocked, clientAddress, unlockWallet, isLoading } = useWdk()
 
   const titleVariants = {
     initial: { y: "110%" },
@@ -36,13 +36,17 @@ export default function BlockchainHero() {
     },
   }
 
-  const handleConnectWallet = async () => {
+  const handleConnect = async () => {
     try {
-      await connectWallet()
+      if (isLocked) {
+        await unlockWallet()
+      }
     } catch (error) {
       console.error("Error connecting wallet:", error)
     }
   }
+
+  const isConnected = isInitialized && !isLocked && clientAddress
 
   return (
     <section className="relative h-screen w-full flex items-center justify-center text-center overflow-hidden">
@@ -98,28 +102,25 @@ export default function BlockchainHero() {
         >
           {!isConnected ? (
             <button
-              onClick={handleConnectWallet}
-              disabled={isConnecting}
+              onClick={handleConnect}
+              disabled={isLoading}
               className="group relative inline-flex items-center justify-center px-8 py-4 text-white text-sm uppercase tracking-wider font-micro overflow-hidden border-2 border-white hover:bg-white hover:text-black transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Wallet className="mr-2 w-5 h-5" />
               <span className="relative z-10">
-                {isConnecting ? "Connecting..." : t("blockchainHero.connectWallet")}
+                {isLoading ? "Connecting..." : t("blockchainHero.connectWallet")}
               </span>
             </button>
           ) : (
             <div className="group relative inline-flex items-center justify-center px-8 py-4 text-white text-sm uppercase tracking-wider font-micro overflow-hidden border-2 border-green-500 bg-green-500/20">
               <CheckCircle className="mr-2 w-5 h-5 text-green-400" />
               <span className="relative z-10">
-                {address?.slice(0, 6)}...{address?.slice(-4)}
+                {clientAddress?.slice(0, 6)}...{clientAddress?.slice(-4)}
               </span>
             </div>
           )}
 
-          <a
-            href="#terrain-map"
-            className="group relative inline-flex items-center justify-center px-8 py-4 text-white text-sm uppercase tracking-wider font-micro overflow-hidden border-2 border-white/50 hover:border-white hover:bg-white/10 transition-all duration-300"
-          >
+          <a href="#terrain-map" className="group relative inline-flex items-center justify-center px-8 py-4 text-white text-sm uppercase tracking-wider font-micro overflow-hidden border-2 border-white/50 hover:border-white hover:bg-white/10 transition-all duration-300">
             <Building2 className="mr-2 w-5 h-5" />
             <span className="relative z-10">{t("blockchainHero.viewProperties")}</span>
           </a>

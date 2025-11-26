@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useWdk } from "~~/contexts/WdkContext";
+import { useWdk } from "@/contexts/WdkContext";
 
 interface UseWdkBalanceReturn {
   balance: bigint | null;

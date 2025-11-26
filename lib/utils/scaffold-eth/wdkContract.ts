@@ -4,7 +4,7 @@
  */
 
 import { ethers } from "ethers";
-import { WdkAccount } from "~~/contexts/WdkContext";
+import { WdkAccount } from "@/lib/contexts/WdkContext";
 
 /**
  * Create a JSON-RPC provider for read-only operations

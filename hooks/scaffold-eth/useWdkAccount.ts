@@ -1,4 +1,4 @@
-import { useWdk, WdkAccount } from "~~/contexts/WdkContext";
+import { useWdk, WdkAccount } from "@/contexts/WdkContext";
 
 /**
  * Hook to access the current WDK account
