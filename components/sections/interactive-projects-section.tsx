@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { useTranslation } from "@/lib/i18n" // Import useTranslation
+import { useTranslation } from "@/lib/i18n"
 
 const projectsData = [
   {
@@ -34,7 +34,7 @@ const projectsData = [
 ]
 
 export default function InteractiveProjectsSection() {
-  const { t } = useTranslation() // Use the translation hook
+  const { t } = useTranslation()
   const [currentProject, setCurrentProject] = useState(0)
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function InteractiveProjectsSection() {
     }, 7000)
 
     return () => clearInterval(timer)
-  }, [])
+  }, [currentProject]) // Resetear el timer cada vez que currentProject cambia
 
   const nextProject = () => {
     setCurrentProject((prev) => (prev + 1) % projectsData.length)
@@ -51,6 +51,10 @@ export default function InteractiveProjectsSection() {
 
   const prevProject = () => {
     setCurrentProject((prev) => (prev - 1 + projectsData.length) % projectsData.length)
+  }
+
+  const goToProject = (index: number) => {
+    setCurrentProject(index)
   }
 
   return (
@@ -139,7 +143,7 @@ export default function InteractiveProjectsSection() {
               {projectsData.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentProject(index)}
+                  onClick={() => goToProject(index)}
                   className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
                     index === currentProject ? "bg-white scale-125" : "bg-white/40 hover:bg-white/60"
                   }`}

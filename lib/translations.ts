@@ -5,7 +5,9 @@ export const translations = {
     "header.consulting": "Consulting",
     "header.reviews": "Reviews",
     "header.contact": "Contact",
-    "header.boxArquitech": "BOX ARQUITECH",
+    "header.realEstate": "Real Estate",
+    "header.terrains": "Terrains",
+    "header.boxArchitects": "BOX ARCHITECTS",
 
     // Hero
     "hero.title1": "We design spaces",
@@ -53,7 +55,7 @@ export const translations = {
     // Reseñas Section (Reviews)
     "reviews.title": "Reviews",
     "reviews.subtitle":
-      "Our clients' satisfaction is our greatest achievement. Learn about the experiences of those who have trusted BOX ARQUITECH.",
+      "Our clients' satisfaction is our greatest achievement. Learn about the experiences of those who have trusted BOX ARCHITECTS.",
     "reviews.noReviews": "We will soon share our clients' experiences.",
     "reviews.stats.projectsCompleted": "Projects Completed",
     "reviews.stats.yearsExperience": "Years of Experience",
@@ -72,17 +74,33 @@ export const translations = {
     "reviews.ctaTitle": "Ready for your next project?",
     "reviews.ctaSubtitle": "Join our satisfied clients and transform your architectural vision into reality.",
     "reviews.ctaButton": "START PROJECT",
+    
+    // Sistema de reseñas - Agregar nueva reseña
+    "reviews.addReview.button": "Add Review",
+    "reviews.addReview.title": "Share Your Experience",
+    "reviews.addReview.subtitle": "Tell us about your experience with BOX ARCHITECTS and help other clients.",
+    "reviews.addReview.rating": "Rating",
+    "reviews.addReview.name": "Your Name",
+    "reviews.addReview.namePlaceholder": "Enter your full name",
+    "reviews.addReview.project": "Project Name",
+    "reviews.addReview.projectPlaceholder": "e.g., Modern House, Commercial Building",
+    "reviews.addReview.location": "Location",
+    "reviews.addReview.locationPlaceholder": "e.g., San José, Costa Rica",
+    "reviews.addReview.review": "Your Review",
+    "reviews.addReview.reviewPlaceholder": "Share your experience with BOX ARCHITECTS...",
+    "reviews.addReview.submit": "Submit Review",
+    "reviews.addReview.cancel": "Cancel",
 
-    // Contact Section
-    "contact.title": " Schedule Your Free Consultation",
+    // Contact Section ✅ COMPLETO
+    "contact.title": "Schedule Your Free Consultation",
     "contact.subtitle":
       "Please complete the form below. We will respond shortly to schedule a call where we can show you how we can help bring your architectural vision to life.",
     "contact.fullName": "Full Name",
     "contact.fullNamePlaceholder": "Your full name",
     "contact.email": "Email Address",
     "contact.emailPlaceholder": "your@email.com",
-    "contact.whatsapp": "WhatsApp Number",
-    "contact.whatsappPlaceholder": "+506 1234 5678",
+    "contact.whatsapp": "National or international WhatsApp number",
+    "contact.whatsappPlaceholder": "+506 8888 8888",
     "contact.projectType": "Project Type",
     "contact.selectOption": "Select an option",
     "contact.projectType.house": "House",
@@ -95,7 +113,11 @@ export const translations = {
     "contact.projectLocationPlaceholder": "Province, Canton",
     "contact.idea": "Briefly tell us your idea",
     "contact.ideaPlaceholder": "Ex: I want to build a small house for rent near the beach",
-    "contact.submitButton": "Schedule my free call",
+    "contact.submitButton": "Submit Inquiry",
+    "contact.sending": "Sending...",
+    "contact.successMessage": "Message sent successfully. We will contact you soon.",
+    "contact.errorMessage": "Error sending message. Please try again.",
+    "contact.bottomMessage": "We will contact you within 24 hours to discuss your project",
 
     // Footer
     "footer.description": "Architecture studio specializing in tropical brutalist design in Costa Rica.",
@@ -104,7 +126,7 @@ export const translations = {
     "footer.terms": "Terms",
     "footer.privacyPolicy": "Privacy Policy",
     "footer.cookies": "Cookies",
-    "footer.copyright": "© 2025 BOX ARQUITECH Costa Rica. All rights reserved.",
+    "footer.copyright": "© 2025 BOX ARCHITECTS Costa Rica. All rights reserved.",
 
     // Services Section
     "services.title": "Services",
@@ -129,7 +151,7 @@ export const translations = {
     "founder.item2": "15+ Years in Costa Rica",
     "founder.item3": "Specialist in Tropical Architecture",
 
-    // Aprender Section (Learn) - keeping translations even if not rendered
+    // Aprender Section (Learn)
     "learn.title": "Insights & Creativity",
     "learn.subtitle":
       "Dive into the world of purposeful architecture. Here we share our knowledge, ideas, and the creative process that brings each project to life.",
@@ -146,32 +168,120 @@ export const translations = {
     // Terms and Conditions Page
     "terms.title": "Terms and Conditions",
     "terms.paragraph1":
-      "Welcome to BOX ARQUITECH. By accessing or using our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.",
+      "Welcome to BOX ARCHITECTS. By accessing or using our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must not use our website.",
     "terms.paragraph2":
       "The content provided on this website is for general informational purposes only. We reserve the right to modify or discontinue any aspect of the website at any time without prior notice. We are not liable for any inaccuracies or omissions in the information provided.",
     "terms.paragraph3":
-      "All intellectual property rights related to the content and design of this website belong to BOX ARQUITECH. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.",
+      "All intellectual property rights related to the content and design of this website belong to BOX ARCHITECTS. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.",
     "terms.paragraph4":
       "Your use of this website is at your sole risk. We do not guarantee that the website will be uninterrupted, error-free, or free of viruses or other harmful components. We shall not be liable for any damages arising from the use of this website.",
 
     // Privacy Policy Page
     "privacyPolicy.title": "Privacy Policy",
     "privacyPolicy.paragraph1":
-      "At BOX ARQUITECH, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.",
+      "At BOX ARCHITECTS, we are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.",
     "privacyPolicy.paragraph2":
       "We collect personal information that you voluntarily provide to us, such as your name, email address, phone number, and project details when you fill out our contact form. We use this information solely to respond to your inquiries, provide consultation services, and improve our offerings.",
     "privacyPolicy.paragraph3":
       "We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties. This does not include trusted third parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential.",
     "privacyPolicy.paragraph4":
       "We implement a variety of security measures to maintain the safety of your personal information. By using our site, you consent to our privacy policy. We reserve the right to update this policy at any time, and any changes will be posted on this page.",
+
+    // Inmobiliaria Section (Real Estate)
+    "inmobiliaria.title": "Real Estate",
+    "inmobiliaria.subtitle": "Discover unique properties designed with architectural vision in Costa Rica.",
+    "inmobiliaria.pageTitle": "Properties & Real Estate",
+    "inmobiliaria.pageSubtitle": "Find your next home or investment in Costa Rica with our curated selection of architecturally designed properties.",
+    "inmobiliaria.featuredProperties": "Featured Properties",
+    "inmobiliaria.viewAllProperties": "View All Properties",
+    "inmobiliaria.viewDetails": "View Details",
+    "inmobiliaria.stats.properties": "Properties Available",
+    "inmobiliaria.stats.provinces": "Provinces Covered",
+    "inmobiliaria.stats.locations": "Prime Locations",
+    "inmobiliaria.resultsFound": "{count} properties found",
+    "inmobiliaria.noResults": "No properties found",
+    "inmobiliaria.tryDifferentFilters": "Try adjusting your search filters to find what you're looking for.",
+    
+    // Property Types
+    "inmobiliaria.propertyTypes.house": "House",
+    "inmobiliaria.propertyTypes.land": "Land",
+    "inmobiliaria.propertyTypes.apartment": "Apartment", 
+    "inmobiliaria.propertyTypes.commercial": "Commercial",
+    
+    // Filters
+    "inmobiliaria.filters.title": "Filter Properties",
+    "inmobiliaria.filters.search": "Search",
+    "inmobiliaria.filters.searchPlaceholder": "Search by title or location...",
+    "inmobiliaria.filters.propertyType": "Property Type",
+    "inmobiliaria.filters.priceRange": "Price Range",
+    "inmobiliaria.filters.location": "Location",
+    "inmobiliaria.filters.all": "All Types",
+    "inmobiliaria.filters.allPrices": "All Prices",
+    "inmobiliaria.filters.allLocations": "All Locations",
+    
+    // Contact CTA
+    "inmobiliaria.contactCTA.title": "Looking for something specific?",
+    "inmobiliaria.contactCTA.subtitle": "Let us know what you're looking for and we'll help you find the perfect property or design a custom solution.",
+    "inmobiliaria.contactCTA.button": "Contact Us",
+
+    // Terrain Map Section
+    "terrainMap.title": "Explore Premium Terrains",
+    "terrainMap.subtitle": "Each property legally verified with National Registry data and complete investment analysis.",
+    "terrainMap.stats.verifiedTitles": "Verified Titles",
+    "terrainMap.stats.provinces": "Provinces", 
+    "terrainMap.stats.premiumLocations": "Premium Locations",
+    "terrainMap.legend.cleanTitle": "Clean Title",
+    "terrainMap.legend.inProcess": "In Process",
+    "terrainMap.legend.requiresReview": "Requires Review",
+    "terrainMap.loading": "Loading map...",
+    "terrainMap.error": "Error loading map",
+
+    // View Modes
+    "terrainMap.viewModes.satellite": "Satellite",
+    "terrainMap.viewModes.terrain": "Terrain", 
+    "terrainMap.viewModes.streets": "Streets",
+    "terrainMap.controls.resetView": "Reset View",
+
+    // Common Status
+    "terrains.common.available": "Available",
+    "terrains.common.inProcess": "In process",
+
+    // Modal Content
+    "terrainModal.areaM2": "Area in m²",
+    "terrainModal.areaFt2": "Area in ft²",
+    "terrainModal.price": "Price",
+    "terrainModal.status": "Status",
+    "terrainModal.readyToBuild": "Ready to build",
+    "terrainModal.premiumAmenities": "Premium Amenities",
+    "terrainModal.registryInfo": "Registry Information",
+    "terrainModal.fincaNumber": "Finca Number",
+    "terrainModal.province": "Province",
+    "terrainModal.currentOwner": "Current Owner",
+    "terrainModal.inscriptionDate": "Inscription Date",
+    "terrainModal.legalStatus": "Legal Status",
+    "terrainModal.investmentAnalysis": "Investment Analysis",
+    "terrainModal.potential": "Potential",
+    "terrainModal.zoning": "Zoning",
+    "terrainModal.access": "Access",
+    "terrainModal.boxGuarantee": "Box Architects Guarantee",
+    "terrainModal.guarantee1": "Complete legal study",
+    "terrainModal.guarantee2": "Digital signature from your country",
+    "terrainModal.guarantee3": "Online platform project tracking",
+    "terrainModal.guarantee4": "Personal concierge (from airport arrival)",
+    "terrainModal.requestPDF": "Free Legal consult",
+    "terrainModal.whatsappConcierge":"WhatsApp Agent",
+    "terrainModal.securePurchase": "Schedule call",
   },
+
   es: {
     // Header
     "header.aboutUs": "Nosotros",
     "header.consulting": "Consultoría",
     "header.reviews": "Reseñas",
     "header.contact": "Contacto",
-    "header.boxArquitech": "BOX ARQUITECH",
+    "header.realEstate": "Inmobiliaria",
+    "header.terrains": "Terrenos",
+    "header.boxArchitects": "BOX ARCHITECTS",
 
     // Hero
     "hero.title1": "Diseñamos espacios",
@@ -198,7 +308,7 @@ export const translations = {
     // Nosotros Section (About Us)
     "aboutUs.missionTitle": "Nuestra Misión",
     "aboutUs.missionText":
-      "En BOX ARQUITECH, diseñamos espacios con intención, alma y propósito. Creemos que la arquitectura debe adaptarse a su entorno y honrar la historia de quienes la habitan. Cada uno de nuestros proyectos —ya sea una casa, un restaurante o un lodge turístico— nace del amor por lo que hacemos y una profunda conexión con la naturaleza.",
+      "En BOX ARCHITECTS, diseñamos espacios con intención, alma y propósito. Creemos que la arquitectura debe adaptarse a su entorno y honrar la historia de quienes la habitan. Cada uno de nuestros proyectos —ya sea una casa, un restaurante o un lodge turístico— nace del amor por lo que hacemos y una profunda conexión con la naturaleza.",
     "aboutUs.visionTitle": "Nuestra Visión",
     "aboutUs.visionText":
       "Buscamos transformar la forma en que la arquitectura se vive y se experimenta en Costa Rica. Diseñamos espacios auténticos que fluyen con el entorno, respetan el conocimiento constructivo ancestral y se integran con inteligencia y sensibilidad en cada lugar. Nuestro objetivo es crear arquitectura significativa para quienes aman lo que hacen.",
@@ -219,7 +329,7 @@ export const translations = {
     // Reseñas Section (Reviews)
     "reviews.title": "Reseñas",
     "reviews.subtitle":
-      "La satisfacción de nuestros clientes es nuestro mayor logro. Conoce las experiencias de quienes han confiado en BOX ARQUITECH.",
+      "La satisfacción de nuestros clientes es nuestro mayor logro. Conoce las experiencias de quienes han confiado en BOX ARCHITECTS.",
     "reviews.noReviews": "Pronto compartiremos las experiencias de nuestros clientes.",
     "reviews.stats.projectsCompleted": "Proyectos Completados",
     "reviews.stats.yearsExperience": "Años de Experiencia",
@@ -238,17 +348,33 @@ export const translations = {
     "reviews.ctaTitle": "¿Listo para tu próximo proyecto?",
     "reviews.ctaSubtitle": "Únete a nuestros clientes satisfechos y transforma tu visión arquitectónica en realidad.",
     "reviews.ctaButton": "INICIAR PROYECTO",
+    
+    // Sistema de reseñas - Agregar nueva reseña
+    "reviews.addReview.button": "Dejar Reseña",
+    "reviews.addReview.title": "Comparte tu Experiencia",
+    "reviews.addReview.subtitle": "Cuéntanos sobre tu experiencia con BOX ARCHITECTS y ayuda a otros clientes.",
+    "reviews.addReview.rating": "Calificación",
+    "reviews.addReview.name": "Tu Nombre",
+    "reviews.addReview.namePlaceholder": "Ingresa tu nombre completo",
+    "reviews.addReview.project": "Nombre del Proyecto",
+    "reviews.addReview.projectPlaceholder": "ej: Casa Moderna, Edificio Comercial",
+    "reviews.addReview.location": "Ubicación",
+    "reviews.addReview.locationPlaceholder": "ej: San José, Costa Rica",
+    "reviews.addReview.review": "Tu Reseña",
+    "reviews.addReview.reviewPlaceholder": "Comparte tu experiencia con BOX ARCHITECTS...",
+    "reviews.addReview.submit": "Enviar Reseña",
+    "reviews.addReview.cancel": "Cancelar",
 
-    // Contact Section
-    "contact.title": " Agenda tu Consulta Gratuita",
+    // Contact Section ✅ COMPLETO
+    "contact.title": "Agenda tu Consulta Gratuita",
     "contact.subtitle":
       "Por favor, completa el siguiente formulario. Te responderemos en breve para agendar una llamada donde podremos mostrarte cómo podemos ayudarte a materializar tu visión arquitectónica.",
     "contact.fullName": "Nombre Completo",
     "contact.fullNamePlaceholder": "Tu nombre completo",
     "contact.email": "Correo Electrónico",
     "contact.emailPlaceholder": "tu@correo.com",
-    "contact.whatsapp": "Número de WhatsApp",
-    "contact.whatsappPlaceholder": "+506 1234 5678",
+    "contact.whatsapp": "WhatsApp nacional o internacional",
+    "contact.whatsappPlaceholder": "+506 8888 8888",
     "contact.projectType": "Tipo de Proyecto",
     "contact.selectOption": "Selecciona una opción",
     "contact.projectType.house": "Casa",
@@ -261,7 +387,11 @@ export const translations = {
     "contact.projectLocationPlaceholder": "Provincia, Cantón",
     "contact.idea": "Cuéntanos brevemente tu idea",
     "contact.ideaPlaceholder": "Ej: Quiero construir una pequeña casa para alquiler cerca de la playa",
-    "contact.submitButton": "Agendar mi llamada gratuita",
+    "contact.submitButton": "Enviar Consulta",
+    "contact.sending": "Enviando...",
+    "contact.successMessage": "Mensaje enviado exitosamente. Te contactaremos pronto.",
+    "contact.errorMessage": "Error al enviar el mensaje. Por favor, intenta nuevamente.",
+    "contact.bottomMessage": "Te contactaremos dentro de 24 horas para discutir tu proyecto",
 
     // Footer
     "footer.description": "Estudio de arquitectura especializado en diseño brutalista tropical en Costa Rica.",
@@ -270,7 +400,7 @@ export const translations = {
     "footer.terms": "Términos",
     "footer.privacyPolicy": "Política de Privacidad",
     "footer.cookies": "Cookies",
-    "footer.copyright": "© 2025 BOX ARQUITECH Costa Rica. Todos los derechos reservados.",
+    "footer.copyright": "© 2025 BOX ARCHITECTS Costa Rica. Todos los derechos reservados.",
 
     // Services Section
     "services.title": "Servicios",
@@ -295,7 +425,7 @@ export const translations = {
     "founder.item2": "15+ Años en Costa Rica",
     "founder.item3": "Especialista en Arquitectura Tropical",
 
-    // Aprender Section (Learn) - keeping translations even if not rendered
+    // Aprender Section (Learn)
     "learn.title": "Insights y Creatividad",
     "learn.subtitle":
       "Sumérgete en el mundo de la arquitectura con propósito. Aquí compartimos nuestro conocimiento, ideas y el proceso creativo que da vida a cada proyecto.",
@@ -313,23 +443,108 @@ export const translations = {
     // Terms and Conditions Page
     "terms.title": "Términos y Condiciones",
     "terms.paragraph1":
-      "Bienvenido a BOX ARQUITECH. Al acceder o utilizar nuestro sitio web, usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web.",
+      "Bienvenido a BOX ARCHITECTS. Al acceder o utilizar nuestro sitio web, usted acepta estar sujeto a estos Términos y Condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestro sitio web.",
     "terms.paragraph2":
       "El contenido proporcionado en este sitio web es solo para fines informativos generales. Nos reservamos el derecho de modificar o descontinuar cualquier aspecto del sitio web en cualquier momento sin previo aviso. No somos responsables de ninguna inexactitud u omisión en la información proporcionada.",
     "terms.paragraph3":
-      "Todos los derechos de propiedad intelectual relacionados con el contenido y el diseño de este sitio web pertenecen a BOX ARQUITECH. El uso, la reproducción o la distribución no autorizados de cualquier contenido están estrictamente prohibidos.",
+      "Todos los derechos de propiedad intelectual relacionados con el contenido y el diseño de este sitio web pertenecen a BOX ARCHITECTS. El uso, la reproducción o la distribución no autorizados de cualquier contenido están estrictamente prohibidos.",
     "terms.paragraph4":
       "El uso de este sitio web es bajo su propio riesgo. No garantizamos que el sitio web sea ininterrumpido, libre de errores o libre de virus u otros componentes dañinos. No seremos responsables de ningún daño que surja del uso de este sitio web.",
 
     // Privacy Policy Page
     "privacyPolicy.title": "Política de Privacidad",
     "privacyPolicy.paragraph1":
-      "En BOX ARQUITECH, nos comprometemos a proteger su privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos su información personal cuando visita nuestro sitio web o interactúa con nuestros servicios.",
+      "En BOX ARCHITECTS, nos comprometemos a proteger su privacidad. Esta política explica cómo recopilamos, usamos y salvaguardamos su información personal cuando visita nuestro sitio web o interactúa con nuestros servicios.",
     "privacyPolicy.paragraph2":
       "Recopilamos información personal que usted nos proporciona voluntariamente, como su nombre, dirección de correo electrónico, número de teléfono y detalles del proyecto cuando completa nuestro formulario de contacto. Utilizamos esta información únicamente para responder a sus consultas, proporcionar servicios de consultoría y mejorar nuestras ofertas.",
     "privacyPolicy.paragraph3":
       "No vendemos, comercializamos ni transferimos de ninguna otra forma su información de identificación personal a terceros. Esto no incluye a terceros de confianza que nos ayudan a operar nuestro sitio web, llevar a cabo nuestro negocio o servir a nuestros usuarios, siempre y cuando esas partes acuerden mantener esta información confidencial.",
     "privacyPolicy.paragraph4":
-      "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal. Al usar nuestro sitio, usted acepta nuestra política de privacidad. Nos reservamos el derecho de actualizar esta política en cualquier momento, y cualquier cambio se publicará en esta página.",
-  },
+    "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal. Al usar nuestro sitio, usted acepta nuestra política de privacidad. Nos reservamos el derecho de actualizar esta política en cualquier momento, y cualquier cambio se publicará en esta página.",
+
+    // Inmobiliaria Section (Real Estate)
+    "inmobiliaria.title": "Inmobiliaria",
+    "inmobiliaria.subtitle": "Descubre propiedades únicas diseñadas con visión arquitectónica en Costa Rica.",
+    "inmobiliaria.pageTitle": "Propiedades e Inmobiliaria",
+    "inmobiliaria.pageSubtitle": "Encuentra tu próximo hogar o inversión en Costa Rica con nuestra selección curada de propiedades diseñadas arquitectónicamente.",
+    "inmobiliaria.featuredProperties": "Propiedades Destacadas",
+    "inmobiliaria.viewAllProperties": "Ver Todas las Propiedades",
+    "inmobiliaria.viewDetails": "Ver Detalles",
+    "inmobiliaria.stats.properties": "Propiedades Disponibles",
+    "inmobiliaria.stats.provinces": "Provincias Cubiertas",
+    "inmobiliaria.stats.locations": "Ubicaciones Premium",
+    "inmobiliaria.resultsFound": "{count} propiedades encontradas",
+    "inmobiliaria.noResults": "No se encontraron propiedades",
+    "inmobiliaria.tryDifferentFilters": "Intenta ajustar tus filtros de búsqueda para encontrar lo que buscas.",
+    
+    // Tipos de Propiedad
+    "inmobiliaria.propertyTypes.house": "Casa",
+    "inmobiliaria.propertyTypes.land": "Terreno",
+    "inmobiliaria.propertyTypes.apartment": "Apartamento",
+    "inmobiliaria.propertyTypes.commercial": "Comercial",
+    
+    // Filtros
+    "inmobiliaria.filters.title": "Filtrar Propiedades",
+    "inmobiliaria.filters.search": "Buscar",
+    "inmobiliaria.filters.searchPlaceholder": "Buscar por título o ubicación...",
+    "inmobiliaria.filters.propertyType": "Tipo de Propiedad",
+    "inmobiliaria.filters.priceRange": "Rango de Precio",
+    "inmobiliaria.filters.location": "Ubicación",
+    "inmobiliaria.filters.all": "Todos los Tipos",
+    "inmobiliaria.filters.allPrices": "Todos los Precios",
+    "inmobiliaria.filters.allLocations": "Todas las Ubicaciones",
+    
+    // CTA de Contacto
+    "inmobiliaria.contactCTA.title": "¿Buscas algo específico?",
+    "inmobiliaria.contactCTA.subtitle": "Cuéntanos qué estás buscando y te ayudaremos a encontrar la propiedad perfecta o diseñar una solución personalizada.",
+    "inmobiliaria.contactCTA.button": "Contáctanos",
+
+    // Terrain Map Section  
+    "terrainMap.title": "Explora Terrenos Premium",
+    "terrainMap.subtitle": "Cada propiedad verificada legalmente con datos del Registro Nacional y análisis completo de inversión.",
+    "terrainMap.stats.verifiedTitles": "Títulos Verificados",
+    "terrainMap.stats.provinces": "Provincias",
+    "terrainMap.stats.premiumLocations": "Ubicaciones Premium", 
+    "terrainMap.legend.cleanTitle": "Título Limpio",
+    "terrainMap.legend.inProcess": "En Proceso",
+    "terrainMap.legend.requiresReview": "Requiere Revisión",
+    "terrainMap.loading": "Cargando mapa...",
+    "terrainMap.error": "Error cargando el mapa",
+
+    // View Modes
+    "terrainMap.viewModes.satellite": "Satélite",
+    "terrainMap.viewModes.terrain": "Relieve",
+    "terrainMap.viewModes.streets": "Calles",
+    "terrainMap.controls.resetView": "Reset Vista",
+
+    // Common Status
+    "terrains.common.available": "Disponible",
+    "terrains.common.inProcess": "En proceso",
+
+    // Modal Content
+    "terrainModal.areaM2": "Área en m²",
+    "terrainModal.areaFt2": "Área en pies²",
+    "terrainModal.price": "Precio",
+    "terrainModal.status": "Estado",
+    "terrainModal.readyToBuild": "Listo para construir",
+    "terrainModal.premiumAmenities": "Amenidades Premium",
+    "terrainModal.registryInfo": "Información Registral",
+    "terrainModal.fincaNumber": "Número de Finca", 
+    "terrainModal.province": "Provincia",
+    "terrainModal.currentOwner": "Propietario Actual",
+    "terrainModal.inscriptionDate": "Fecha Inscripción",
+    "terrainModal.legalStatus": "Estado Legal",
+    "terrainModal.investmentAnalysis": "Análisis de Inversión",
+    "terrainModal.potential": "Potencial",
+    "terrainModal.zoning": "Zonificación",
+    "terrainModal.access": "Acceso",
+    "terrainModal.boxGuarantee": "Garantía Box Architects",
+    "terrainModal.guarantee1": "Estudio legal completo",
+    "terrainModal.guarantee2": "Firma digital desde tu país",
+    "terrainModal.guarantee3": "Seguimiento de obra en plataforma online",
+    "terrainModal.guarantee4": "Concierge personal (desde tu llegada al aeropuerto)",
+    "terrainModal.requestPDF": "Consulta legal gratuita",
+    "terrainModal.whatsappConcierge": "Agente WhatsApp",
+    "terrainModal.securePurchase": "Agendar llamada",
+  }
 }

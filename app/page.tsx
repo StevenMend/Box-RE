@@ -1,28 +1,53 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
+import { useSearchParams } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import SimpleLogoIntro from "@/components/simple-logo-intro"
 import Header from "@/components/header"
 import StaticHero from "@/components/static-hero"
-import InteractiveProjectsSection from "@/components/interactive-projects-section"
-import NosotrosSection from "@/components/nosotros-section"
-import ConsultoriaSection from "@/components/consultoria-section"
-import ReseñasSection from "@/components/reseñas-section"
-// Removed AprenderSection import
-import ContactSection from "@/components/contact-section"
+import InteractiveProjectsSection from "@/components/sections/interactive-projects-section"
+import NosotrosSection from "@/components/sections/nosotros-section"
+import ConsultoriaSection from "@/components/sections/consultoria-section"
+import ReseñasSection from "@/components/sections/reseñas-section"
+import InmobiliariaSection from "@/components/sections/inmobiliaria-section"
+import ContactSection from "@/components/sections/contact-section"
 import Footer from "@/components/footer"
+import InteractiveTerrainMap from "@/components/interactive-terrain-map"
+import CostaRicaProvinceMap from "@/components/costa-rica-province-map" // Add this import
 
-export default function Home() {
+function HomeContent() {
   const [loading, setLoading] = useState(true)
+  const searchParams = useSearchParams()
+  const shouldGoToContact = searchParams.get('contact') === 'true'
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    if (shouldGoToContact) {
+      // Si viene con ?contact=true, saltar la intro
       setLoading(false)
-    }, 2300)
+    } else {
+      // Comportamiento normal con intro
+      const timer = setTimeout(() => {
+        setLoading(false)
+      }, 2300)
+      return () => clearTimeout(timer)
+    }
+  }, [shouldGoToContact])
 
-    return () => clearTimeout(timer)
-  }, [])
+  useEffect(() => {
+    // Hacer scroll al formulario después de que cargue la página
+    if (!loading && shouldGoToContact) {
+      const timer = setTimeout(() => {
+        const contactSection = document.getElementById('contact')
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' })
+          console.log('Scroll to contact executed successfully')
+          // NO limpiar URL para evitar scroll hacia arriba
+        }
+      }, 300)
+      return () => clearTimeout(timer)
+    }
+  }, [loading, shouldGoToContact])
 
   return (
     <>
@@ -45,7 +70,8 @@ export default function Home() {
               <NosotrosSection />
               <ConsultoriaSection />
               <ReseñasSection />
-              {/* Removed AprenderSection */}
+              <InmobiliariaSection />
+              <InteractiveTerrainMap />
               <ContactSection />
             </main>
             <Footer />
@@ -53,5 +79,17 @@ export default function Home() {
         )}
       </AnimatePresence>
     </>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-white">Loading...</div>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   )
 }
